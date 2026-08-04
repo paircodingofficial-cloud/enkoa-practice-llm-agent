@@ -11253,5 +11253,212 @@
     }
    }
   }
+ ],
+ "02553c5e02fcc53fe032": [
+  {
+   "parsed": {
+    "category": "환불",
+    "urgency": "긴급",
+    "needs_human": true
+   }
+  }
+ ],
+ "afc3cc2e44969f0dddf1": [
+  {
+   "parsed": {
+    "category": "배송",
+    "urgency": "긴급",
+    "needs_human": true
+   }
+  }
+ ],
+ "61f1d349790dafefcaa2": [
+  {
+   "parsed": {
+    "category": "교환",
+    "urgency": "보통",
+    "needs_human": true
+   }
+  }
+ ],
+ "024408fb9d2a88113b59": [
+  {
+   "parsed": {
+    "category": "기타",
+    "urgency": "보통",
+    "needs_human": true
+   }
+  }
+ ],
+ "55afc6ab07d294f52e50": [
+  {
+   "parsed": {
+    "category": "배송",
+    "urgency": "보통",
+    "needs_human": false
+   }
+  }
+ ],
+ "8e2c383be3730ab9566b": [
+  {
+   "parsed": {
+    "category": "상품",
+    "urgency": "보통",
+    "needs_human": true
+   }
+  }
+ ],
+ "7ca476d86f62bc41cb57": [
+  {
+   "parsed": {
+    "masked_text": "안녕하세요, ***, ***-****-****로 연락주세요. 이메일은 ***@*** 입니다.",
+    "items": [
+     {
+      "original": "홍길동",
+      "pii_type": "이름",
+      "masked": "***"
+     },
+     {
+      "original": "010-1234-5678",
+      "pii_type": "전화번호",
+      "masked": "***-****-****"
+     },
+     {
+      "original": "hong@example.com",
+      "pii_type": "이메일",
+      "masked": "***@***"
+     }
+    ],
+    "risk": "보통"
+   }
+  }
+ ],
+ "690a6b6b3c15683bb820": [
+  {
+   "parsed": {
+    "age": 25,
+    "gender": "남성",
+    "standardized": {
+     "age_group": "20대",
+     "job_category": "사무직",
+     "income_range": "3000만원 정도"
+    }
+   }
+  }
+ ],
+ "1afaaebdb616daa1f40b": [
+  {
+   "parsed": {
+    "age": 25,
+    "gender": "여성",
+    "standardized": {
+     "age_group": "20대",
+     "job_category": "자영업",
+     "income_range": "3500"
+    }
+   }
+  }
+ ],
+ "26ce71bb5213dcb8e595": [
+  {
+   "parsed": {
+    "age": 30,
+    "gender": "남성",
+    "standardized": {
+     "age_group": "30대",
+     "job_category": "학생",
+     "income_range": "2800만원"
+    }
+   }
+  }
+ ],
+ "caaaccd12490ef27c9a9": [
+  {
+   "parsed": {
+    "age": null,
+    "gender": "남성",
+    "standardized": {
+     "age_group": null,
+     "job_category": "자영업",
+     "income_range": "많이벌어요"
+    }
+   }
+  }
+ ],
+ "0d5ee8340d628c572901": [
+  {
+   "parsed": {
+    "age": 40,
+    "gender": "남성",
+    "standardized": {
+     "age_group": "30대",
+     "job_category": "자영업",
+     "income_range": "5000만원"
+    }
+   }
+  }
+ ],
+ "4a2c269312b04023eb38": [
+  {
+   "parsed": {
+    "sentiment": "부정",
+    "topic": "기타",
+    "has_request": false
+   }
+  }
+ ],
+ "576dee84e94d2db77c4a": [
+  {
+   "parsed": {
+    "category": "환불",
+    "urgency": "긴급",
+    "needs_human": true
+   }
+  }
+ ],
+ "2e5e469b307d729e9bbb": [
+  {
+   "parsed": {
+    "category": "배송",
+    "urgency": "긴급",
+    "needs_human": true
+   }
+  }
+ ],
+ "f03eed0fd92feb03e93b": [
+  {
+   "parsed": {
+    "category": "교환",
+    "urgency": "보통",
+    "needs_human": true
+   }
+  }
+ ],
+ "055ca4739d40adc77627": [
+  {
+   "parsed": {
+    "category": "기술지원",
+    "urgency": "높음",
+    "needs_human": true
+   }
+  }
+ ],
+ "6f0e87a1d4d25018cc6c": [
+  {
+   "parsed": {
+    "category": "기타",
+    "urgency": "보통",
+    "needs_human": false
+   }
+  }
+ ],
+ "d6c440ea68b10715a9c7": [
+  {
+   "parsed": {
+    "category": "교환",
+    "urgency": "보통",
+    "needs_human": true
+   }
+  }
  ]
 }
