@@ -1,0 +1,11 @@
+image_file,store_name,store_address,store_tel,transaction_date,receipt_number,subtotal,tax,service_charge,discount,total_amount,payment_method,cash_received,change,ocr_confidence,data_quality,item_count
+receipt_00000.jpg,CGV CINEMAS,,,,,60.0,5.455,,-60.0,60.0,card,,,0.85,good,1
+receipt_00002.jpg,,,,,,28000.0,,,,28000.0,cash,100000.0,72000.0,0.8,good,2
+receipt_00003.jpg,Dynamic,,,,,11000.0,,,,11000.0,cash,,,0.7,good,1
+receipt_00004.jpg,,,,,,194000.0,,,19400.0,174600.0,cash,200000.0,28400.0,0.8,good,3
+receipt_00005.jpg,TRAD KY TOAST CARTE,,,,,28.182,2.818,,,31.0,cash,31.0,,0.8,good,1
+receipt_00006.jpg,Tous Les Jours,,,,,46000.0,,,,46000.0,cash,50000.0,4000.0,0.8,good,3
+receipt_00007.jpg,,,,,,100000.0,10091.0,,,111000.0,cash,111000.0,0.0,0.8,good,1
+receipt_00008.jpg,,,,,,45455.0,4545.0,,,50000.0,card,,,0.8,good,3
+receipt_00009.jpg,,,,,,36000.0,,,,36000.0,cash,50000.0,14000.0,0.8,good,1
+receipt_00010.jpg,Auntie Anne's,,,,,17000.0,,,,17000.0,cash,20000.0,3000.0,0.8,good,1
