@@ -213,7 +213,10 @@ def _remember(fp, dumped):
     bucket = _CACHE.setdefault(fp, [])
     if dumped not in bucket:
         bucket.append(dumped)
-    del bucket[:-3]        # 같은 요청은 최근 3개까지만 저장(온도 실험용)
+    # 같은 요청은 3개까지만 저장한다(온도 실험용). **앞에서 자르지 않는 것이 중요하다** —
+    # 오프라인 재생은 bucket[0] 부터 쓰므로, 첫 항목이 바뀌면 그 값으로 만든 다음 프롬프트가
+    # 통째로 캐시 미스가 된다(리포트 생성처럼 앞 결과를 프롬프트에 넣는 단계에서 실제로 발생).
+    del bucket[3:]
     _save_cache()
 
 def _replay(kind, fp, kwargs):

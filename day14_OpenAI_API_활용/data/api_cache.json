@@ -1009,33 +1009,6 @@
       "content": null,
       "tool_calls": [
        {
-        "id": "call_Cg3dr8suPCMZGIMi37nBoCPQ",
-        "type": "function",
-        "function": {
-         "name": "count_reviews_by_rating",
-         "arguments": "{\"rating\":5}"
-        }
-       }
-      ]
-     }
-    }
-   ],
-   "usage": {
-    "total_tokens": 93,
-    "prompt_tokens": 77,
-    "completion_tokens": 16,
-    "completion_tokens_details": {
-     "reasoning_tokens": 0
-    }
-   }
-  },
-  {
-   "choices": [
-    {
-     "message": {
-      "content": null,
-      "tool_calls": [
-       {
         "id": "call_LWhFCAKKETu4FBxq6iJrY2Id",
         "type": "function",
         "function": {
@@ -1064,6 +1037,33 @@
       "tool_calls": [
        {
         "id": "call_H6wVBrlZxKKGPyKsCNJJsINw",
+        "type": "function",
+        "function": {
+         "name": "count_reviews_by_rating",
+         "arguments": "{\"rating\":5}"
+        }
+       }
+      ]
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 93,
+    "prompt_tokens": 77,
+    "completion_tokens": 16,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  },
+  {
+   "choices": [
+    {
+     "message": {
+      "content": null,
+      "tool_calls": [
+       {
+        "id": "call_QLmROraXKsTUIVoh1Sr5TJW6",
         "type": "function",
         "function": {
          "name": "count_reviews_by_rating",
@@ -1127,24 +1127,6 @@
    "choices": [
     {
      "message": {
-      "content": "리뷰 분석은 고객의 피드백을 통해 제품이나 서비스의 품질을 개선하고, 시장 트렌드를 파악하며, 고객 만족도를 높이는 데 중요한 역할을 합니다.",
-      "tool_calls": null
-     }
-    }
-   ],
-   "usage": {
-    "total_tokens": 118,
-    "prompt_tokens": 77,
-    "completion_tokens": 41,
-    "completion_tokens_details": {
-     "reasoning_tokens": 0
-    }
-   }
-  },
-  {
-   "choices": [
-    {
-     "message": {
       "content": "리뷰 분석은 고객의 피드백을 통해 제품이나 서비스의 품질을 향상시키고, 소비자의 요구를 이해하여 시장에서 경쟁력을 유지하는 데 필수적입니다.",
       "tool_calls": null
      }
@@ -1164,6 +1146,24 @@
     {
      "message": {
       "content": "리뷰 분석은 고객의 피드백을 통해 제품이나 서비스의 품질을 개선하고, 시장의 트렌드를 이해하며, 경쟁력을 강화하는 데 중요한 역할을 합니다.",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 117,
+    "prompt_tokens": 77,
+    "completion_tokens": 40,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  },
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "리뷰 분석은 고객의 피드백을 통해 제품이나 서비스의 개선점을 파악하고, 소비자 만족도를 높이며, 시장 경쟁력을 강화하는 데 중요한 역할을 합니다.",
       "tool_calls": null
      }
     }
@@ -1239,15 +1239,15 @@
    "choices": [
     {
      "message": {
-      "content": "{\"sentiment\":\"부정\",\"confidence\":0.95,\"summary\":\"제품 사용 후 피부 트러블 발생 및 환불 과정에서의 불만족\"}",
+      "content": "{\"sentiment\":\"부정\",\"confidence\":0.95,\"summary\":\"제품 사용 후 피부 트러블 발생 및 환불 과정에서 불만족스러운 경험을 겪음.\"}",
       "tool_calls": null
      }
     }
    ],
    "usage": {
-    "total_tokens": 326,
+    "total_tokens": 333,
     "prompt_tokens": 293,
-    "completion_tokens": 33,
+    "completion_tokens": 40,
     "completion_tokens_details": {
      "reasoning_tokens": 0
     }
@@ -1257,7 +1257,7 @@
    "choices": [
     {
      "message": {
-      "content": "{\"sentiment\":\"부정\",\"confidence\":0.95,\"summary\":\"제품 사용 후 피부 트러블 발생 및 환불 과정에서 불만족스러운 경험을 언급\"}",
+      "content": "{\"sentiment\":\"부정\",\"confidence\":0.95,\"summary\":\"제품 사용 후 피부 트러블 발생 및 환불 과정에서 불만족스러운 경험을 함.\"}",
       "tool_calls": null
      }
     }
@@ -1275,15 +1275,15 @@
    "choices": [
     {
      "message": {
-      "content": "{\"sentiment\":\"부정\",\"confidence\":0.95,\"summary\":\"제품 사용 후 피부 트러블 발생 및 환불 과정에서 불만족스러운 경험을 겪음.\"}",
+      "content": "{\"sentiment\":\"부정\",\"confidence\":0.95,\"summary\":\"제품 사용 후 피부 트러블 발생 및 환불 과정에서의 불만족\"}",
       "tool_calls": null
      }
     }
    ],
    "usage": {
-    "total_tokens": 333,
+    "total_tokens": 326,
     "prompt_tokens": 293,
-    "completion_tokens": 40,
+    "completion_tokens": 33,
     "completion_tokens_details": {
      "reasoning_tokens": 0
     }
@@ -1463,24 +1463,6 @@
    "choices": [
     {
      "message": {
-      "content": "{\"sentiment\":\"중립\",\"confidence\":0.7,\"summary\":\"사용법과 발림성에 대한 설명이 있으며, 눈에 따끔거림이 있어 주의가 필요하다는 후기.\"}",
-      "tool_calls": null
-     }
-    }
-   ],
-   "usage": {
-    "total_tokens": 371,
-    "prompt_tokens": 327,
-    "completion_tokens": 44,
-    "completion_tokens_details": {
-     "reasoning_tokens": 0
-    }
-   }
-  },
-  {
-   "choices": [
-    {
-     "message": {
       "content": "{\"sentiment\":\"부정\",\"confidence\":0.75,\"summary\":\"사용법과 발림성은 좋지만, 눈에 따끔거림이 있어 눈주변 사용은 피해야 한다.\"}",
       "tool_calls": null
      }
@@ -1512,6 +1494,24 @@
      "reasoning_tokens": 0
     }
    }
+  },
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "{\"sentiment\":\"부정\",\"confidence\":0.75,\"summary\":\"사용법과 발림성은 좋지만, 눈에 따끔거림이 있어 주의가 필요함.\"}",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 367,
+    "prompt_tokens": 327,
+    "completion_tokens": 40,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
   }
  ],
  "d63dcb25edf115f8aa66": [
@@ -1539,24 +1539,6 @@
    "choices": [
     {
      "message": {
-      "content": "{\"sentiment\":\"중립\",\"confidence\":0.75,\"summary\":\"피지오겔 제품에 대한 긍정적인 사용 경험과 미백 효과에 대한 아쉬움을 표현한 리뷰입니다.\"}",
-      "tool_calls": null
-     }
-    }
-   ],
-   "usage": {
-    "total_tokens": 346,
-    "prompt_tokens": 302,
-    "completion_tokens": 44,
-    "completion_tokens_details": {
-     "reasoning_tokens": 0
-    }
-   }
-  },
-  {
-   "choices": [
-    {
-     "message": {
       "content": "{\"sentiment\":\"중립\",\"confidence\":0.75,\"summary\":\"피지오겔의 사용 경험에 대한 중립적인 리뷰로, 미백 효과는 미비하나 자외선 차단에 대한 기대감이 언급됨.\"}",
       "tool_calls": null
      }
@@ -1576,6 +1558,24 @@
     {
      "message": {
       "content": "{\"sentiment\":\"중립\",\"confidence\":0.7,\"summary\":\"피지오겔 썬크림에 대한 긍정적인 사용 경험과 미백 효과에 대한 아쉬움을 표현한 리뷰입니다.\"}",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 349,
+    "prompt_tokens": 302,
+    "completion_tokens": 47,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  },
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "{\"sentiment\":\"중립\",\"confidence\":0.75,\"summary\":\"피지오겔 썬크림에 대한 긍정적인 사용 경험과 미백 효과에 대한 아쉬움을 표현한 리뷰입니다.\"}",
       "tool_calls": null
      }
     }
@@ -2944,13 +2944,13 @@
  ],
  "4c06f98e3549288685a3": [
   {
-   "output_text": "2026년 8월 2일 서울의 날씨는 맑고 기온은 약 25°C로 예상됩니다. "
-  },
-  {
    "output_text": "서울의 8월 평균 기온은 약 24.8°C로, 최고 기온은 28.4°C, 최저 기온은 21.7°C이며, 월 강수량은 약 249mm입니다. ([ko.climate-data.org](https://ko.climate-data.org/%25EC%2595%2584%25EC%258B%259C%25EC%2595%2584/%25EB%258C%2580%25ED%2595%259C%25EB%25AF%25BC%25EA%25B5%25AD/%25EC%2584%259C%25EC%259A%25B8/%25EC%2584%259C%25EC%259A%25B8-718563/t/8%25EC%259B%2594-8/?utm_source=openai)) "
   },
   {
    "output_text": "2026년 8월 4일 서울의 날씨는 맑고 기온은 약 25도 섭씨로 예상됩니다. "
+  },
+  {
+   "output_text": "2026년 8월 4일 서울의 날씨는 맑고 기온은 약 24.8°C로 예상됩니다. ([ko.climate-data.org](https://ko.climate-data.org/%25EC%2595%2584%25EC%258B%259C%25EC%2595%2584/%25EB%258C%2580%25ED%2595%259C%25EB%25AF%25BC%25EA%25B5%25AD/%25EC%2584%259C%25EC%259A%25B8/%25EC%2584%259C%25EC%259A%25B8-718563/t/8%25EC%259B%2594-8/?utm_source=openai)) "
   }
  ],
  "06bdb27e4d09bfdf0c13": [
@@ -4853,24 +4853,6 @@
    "choices": [
     {
      "message": {
-      "content": "{\"sentiment\":\"부정\",\"summary\":\"교정기의 효과에 대한 불만이 있으며, 제품이 기대에 미치지 못해 실망한 것으로 보입니다.\"}",
-      "tool_calls": null
-     }
-    }
-   ],
-   "usage": {
-    "total_tokens": 163,
-    "prompt_tokens": 126,
-    "completion_tokens": 37,
-    "completion_tokens_details": {
-     "reasoning_tokens": 0
-    }
-   }
-  },
-  {
-   "choices": [
-    {
-     "message": {
       "content": "{\"sentiment\":\"부정\",\"summary\":\"교정기가 어깨 연결이 안 되고 꽉 조이지 않아 실망스러운 경험을 했다는 내용입니다.\"}",
       "tool_calls": null
      }
@@ -4902,27 +4884,27 @@
      "reasoning_tokens": 0
     }
    }
-  }
- ],
- "ce5085985ef3c204c247": [
+  },
   {
    "choices": [
     {
      "message": {
-      "content": "{\"sentiment\":\"부정\",\"summary\":\"리뷰에 속지 말고, 제품의 박음질과 찍찍이가 허술하다는 점을 주의해야 합니다. 반품을 원하지 않아 그냥 두었지만, 다른 제품을 다시 구매할 계획입니다.\"}",
+      "content": "{\"sentiment\":\"부정\",\"summary\":\"교정기의 품질에 대한 불만이 있으며, 기대에 미치지 못한 경험을 표현하고 있습니다.\"}",
       "tool_calls": null
      }
     }
    ],
    "usage": {
-    "total_tokens": 199,
-    "prompt_tokens": 141,
-    "completion_tokens": 58,
+    "total_tokens": 161,
+    "prompt_tokens": 126,
+    "completion_tokens": 35,
     "completion_tokens_details": {
      "reasoning_tokens": 0
     }
    }
-  },
+  }
+ ],
+ "ce5085985ef3c204c247": [
   {
    "choices": [
     {
@@ -4954,6 +4936,24 @@
     "total_tokens": 197,
     "prompt_tokens": 141,
     "completion_tokens": 56,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  },
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "{\"sentiment\":\"부정\",\"summary\":\"제품의 박음질과 찍찍이가 허술하다는 불만이 있으며, 반품을 원하지 않아 그냥 두기로 했지만 다른 제품을 다시 구매할 계획임.\"}",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 189,
+    "prompt_tokens": 141,
+    "completion_tokens": 48,
     "completion_tokens_details": {
      "reasoning_tokens": 0
     }
@@ -4996,6 +4996,24 @@
      "reasoning_tokens": 0
     }
    }
+  },
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "{\"sentiment\":\"부정\",\"summary\":\"어깨가 펴지는 효과는 덜 느껴지고, 허리만 펴지는 느낌이 들어서 불만족스러운 리뷰입니다.\"}",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 159,
+    "prompt_tokens": 117,
+    "completion_tokens": 42,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
   }
  ],
  "99c57bdbebf3e2dd0151": [
@@ -5030,6 +5048,24 @@
     "total_tokens": 233,
     "prompt_tokens": 175,
     "completion_tokens": 58,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  },
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "{\"sentiment\":\"부정\",\"summary\":\"사이즈가 맞지 않아 헐거워서 벨트를 사용해야 하고, 벨크로가 약해져서 고정이 잘 되지 않는 문제로 불만족스러운 경험을 했습니다.\"}",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 232,
+    "prompt_tokens": 175,
+    "completion_tokens": 57,
     "completion_tokens_details": {
      "reasoning_tokens": 0
     }
@@ -5072,27 +5108,27 @@
      "reasoning_tokens": 0
     }
    }
-  }
- ],
- "26951bc06ff35a1fdbc8": [
+  },
   {
    "choices": [
     {
      "message": {
-      "content": "{\"sentiment\":\"부정\",\"summary\":\"맨살에 사용 시 약간의 통증이 느껴지며, 옷을 입고 사용하는 것이 좋다는 의견이 있습니다. 어깨를 잡는 효과는 있지만, 허리 부분은 긍정적인 효과가 있는 것으로 보입니다.\"}",
+      "content": "{\"sentiment\":\"부정\",\"summary\":\"제품의 품질에 대한 불만이 있으며, 바느질과 벨크로의 문제로 인해 사용에 어려움이 있다고 느끼고 있습니다.\"}",
       "tool_calls": null
      }
     }
    ],
    "usage": {
-    "total_tokens": 192,
-    "prompt_tokens": 129,
-    "completion_tokens": 63,
+    "total_tokens": 193,
+    "prompt_tokens": 149,
+    "completion_tokens": 44,
     "completion_tokens_details": {
      "reasoning_tokens": 0
     }
    }
-  },
+  }
+ ],
+ "26951bc06ff35a1fdbc8": [
   {
    "choices": [
     {
@@ -5124,6 +5160,24 @@
     "total_tokens": 198,
     "prompt_tokens": 129,
     "completion_tokens": 69,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  },
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "{\"sentiment\":\"중립\",\"summary\":\"맨살에 사용 시 약간의 통증이 느껴지며, 옷을 입고 사용하는 것이 좋다는 의견이 있습니다. 어깨를 잡는 효과는 오래 사용해야 할 것 같고, 허리 부분은 잡아주는 느낌이 있다는 점이 언급되었습니다.\"}",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 199,
+    "prompt_tokens": 129,
+    "completion_tokens": 70,
     "completion_tokens_details": {
      "reasoning_tokens": 0
     }
@@ -5162,6 +5216,24 @@
     "total_tokens": 192,
     "prompt_tokens": 134,
     "completion_tokens": 58,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  },
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "{\"sentiment\":\"부정\",\"summary\":\"겨드랑이 부분이 접혀서 불편함을 느끼고 있으며, 어깨를 펴기 위해 팽팽하게 당겨야 하는 상황에 대한 불만이 표현됨.\"}",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 187,
+    "prompt_tokens": 134,
+    "completion_tokens": 53,
     "completion_tokens_details": {
      "reasoning_tokens": 0
     }
@@ -5260,6 +5332,24 @@
      "reasoning_tokens": 0
     }
    }
+  },
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "{\"sentiment\":\"긍정\",\"summary\":\"착용감이 좋고 성능이 괜찮으며 가성비가 뛰어나다. 그러나 장시간 착용 시 불편함이 있을 수 있으며, 체형에 따라 호흡이 불편할 수 있음.\"}",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 343,
+    "prompt_tokens": 284,
+    "completion_tokens": 59,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
   }
  ],
  "98c5ace1fc1e8b31cec4": [
@@ -5294,6 +5384,24 @@
     "total_tokens": 173,
     "prompt_tokens": 122,
     "completion_tokens": 51,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  },
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "{\"sentiment\":\"긍정\",\"summary\":\"아들이 필요로 해서 구매했으며, 착용감이 좋고 척추 교정에 도움이 될 것 같아 만족스럽다는 긍정적인 리뷰입니다.\"}",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 169,
+    "prompt_tokens": 122,
+    "completion_tokens": 47,
     "completion_tokens_details": {
      "reasoning_tokens": 0
     }
@@ -5336,6 +5444,24 @@
      "reasoning_tokens": 0
     }
    }
+  },
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "{\"sentiment\":\"중립\",\"summary\":\"구매한 2XL 사이즈가 작아 4XL로 교환했으나, 반품된 상품이 온 것 같아 의문이 든다. 상품은 새것 같지만 어깨와 겨드랑이 부분이 불편하며, 자세 교정 효과에 기대를 걸고 있다.\"}",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 243,
+    "prompt_tokens": 166,
+    "completion_tokens": 77,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
   }
  ],
  "70217725f1a6eb73e117": [
@@ -5370,6 +5496,24 @@
     "total_tokens": 192,
     "prompt_tokens": 140,
     "completion_tokens": 52,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  },
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "{\"sentiment\":\"긍정\",\"summary\":\"거북목 문제로 고민하던 중 이 제품을 발견하여 만족스럽게 사용하고 있으며, 처음에는 불편했지만 곧 적응하여 편안해졌다는 긍정적인 경험을 공유하고 있습니다.\"}",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 198,
+    "prompt_tokens": 140,
+    "completion_tokens": 58,
     "completion_tokens_details": {
      "reasoning_tokens": 0
     }
@@ -5432,6 +5576,24 @@
      "reasoning_tokens": 0
     }
    }
+  },
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "{\"sentiment\":\"긍정\",\"summary\":\"착용감이 좋고, 사무직에서의 장시간 앉아있음에도 불구하고 만족스럽다는 의견입니다.\"}",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 181,
+    "prompt_tokens": 141,
+    "completion_tokens": 40,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
   }
  ],
  "f65c0c307a620f7a10b1": [
@@ -5462,61 +5624,61 @@
       "content": null,
       "tool_calls": [
        {
-        "id": "call_X6IJmu5OUqg9pnhyPGpB2qbl",
-        "type": "function",
-        "function": {
-         "name": "count_by_rating",
-         "arguments": "{\"rating\":5}"
-        }
-       }
-      ]
-     }
-    }
-   ],
-   "usage": {
-    "total_tokens": 116,
-    "prompt_tokens": 101,
-    "completion_tokens": 15,
-    "completion_tokens_details": {
-     "reasoning_tokens": 0
-    }
-   }
-  },
-  {
-   "choices": [
-    {
-     "message": {
-      "content": null,
-      "tool_calls": [
-       {
-        "id": "call_z6KbGFXXwuz3F01cGyK6EpvR",
-        "type": "function",
-        "function": {
-         "name": "count_by_rating",
-         "arguments": "{\"rating\":5}"
-        }
-       }
-      ]
-     }
-    }
-   ],
-   "usage": {
-    "total_tokens": 116,
-    "prompt_tokens": 101,
-    "completion_tokens": 15,
-    "completion_tokens_details": {
-     "reasoning_tokens": 0
-    }
-   }
-  },
-  {
-   "choices": [
-    {
-     "message": {
-      "content": null,
-      "tool_calls": [
-       {
         "id": "call_Vfuxb0SsAdwMBsUqTViV6YkJ",
+        "type": "function",
+        "function": {
+         "name": "count_by_rating",
+         "arguments": "{\"rating\":5}"
+        }
+       }
+      ]
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 116,
+    "prompt_tokens": 101,
+    "completion_tokens": 15,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  },
+  {
+   "choices": [
+    {
+     "message": {
+      "content": null,
+      "tool_calls": [
+       {
+        "id": "call_ECbz5QDSOJcz7B1roFuMR6be",
+        "type": "function",
+        "function": {
+         "name": "count_by_rating",
+         "arguments": "{\"rating\":5}"
+        }
+       }
+      ]
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 116,
+    "prompt_tokens": 101,
+    "completion_tokens": 15,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  },
+  {
+   "choices": [
+    {
+     "message": {
+      "content": null,
+      "tool_calls": [
+       {
+        "id": "call_AaAIrYqwooDZIrJzsgqZ3ufS",
         "type": "function",
         "function": {
          "name": "count_by_rating",
@@ -5583,61 +5745,61 @@
       "content": null,
       "tool_calls": [
        {
-        "id": "call_TqCtdIeYEURIcbWWb5EqOjQJ",
-        "type": "function",
-        "function": {
-         "name": "avg_rating",
-         "arguments": "{}"
-        }
-       }
-      ]
-     }
-    }
-   ],
-   "usage": {
-    "total_tokens": 111,
-    "prompt_tokens": 101,
-    "completion_tokens": 10,
-    "completion_tokens_details": {
-     "reasoning_tokens": 0
-    }
-   }
-  },
-  {
-   "choices": [
-    {
-     "message": {
-      "content": null,
-      "tool_calls": [
-       {
-        "id": "call_cslJUhx7trNRbkatzWAaqcTI",
-        "type": "function",
-        "function": {
-         "name": "avg_rating",
-         "arguments": "{}"
-        }
-       }
-      ]
-     }
-    }
-   ],
-   "usage": {
-    "total_tokens": 111,
-    "prompt_tokens": 101,
-    "completion_tokens": 10,
-    "completion_tokens_details": {
-     "reasoning_tokens": 0
-    }
-   }
-  },
-  {
-   "choices": [
-    {
-     "message": {
-      "content": null,
-      "tool_calls": [
-       {
         "id": "call_rm351XZGGSNF6TAzxUl0h9MB",
+        "type": "function",
+        "function": {
+         "name": "avg_rating",
+         "arguments": "{}"
+        }
+       }
+      ]
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 111,
+    "prompt_tokens": 101,
+    "completion_tokens": 10,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  },
+  {
+   "choices": [
+    {
+     "message": {
+      "content": null,
+      "tool_calls": [
+       {
+        "id": "call_oG7dmZj4HWcwPYDCr1yUybEf",
+        "type": "function",
+        "function": {
+         "name": "avg_rating",
+         "arguments": "{}"
+        }
+       }
+      ]
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 111,
+    "prompt_tokens": 101,
+    "completion_tokens": 10,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  },
+  {
+   "choices": [
+    {
+     "message": {
+      "content": null,
+      "tool_calls": [
+       {
+        "id": "call_yQcy3i9d504584zHV2C58Bmb",
         "type": "function",
         "function": {
          "name": "avg_rating",
@@ -5679,33 +5841,6 @@
   }
  ],
  "1f7f859e3a17d6ad7e06": [
-  {
-   "choices": [
-    {
-     "message": {
-      "content": null,
-      "tool_calls": [
-       {
-        "id": "call_XlcmTIQrUSw2EwI3gcjBeMYk",
-        "type": "function",
-        "function": {
-         "name": "count_keyword",
-         "arguments": "{\"keyword\":\"백탁\"}"
-        }
-       }
-      ]
-     }
-    }
-   ],
-   "usage": {
-    "total_tokens": 116,
-    "prompt_tokens": 101,
-    "completion_tokens": 15,
-    "completion_tokens_details": {
-     "reasoning_tokens": 0
-    }
-   }
-  },
   {
    "choices": [
     {
@@ -5759,27 +5894,36 @@
      "reasoning_tokens": 0
     }
    }
-  }
- ],
- "2bcdcba54d86946f3c89": [
+  },
   {
    "choices": [
     {
      "message": {
-      "content": "\"백탁\"이라는 단어가 언급된 리뷰는 1개입니다. 더 궁금한 사항이 있으시면 말씀해 주세요!",
-      "tool_calls": null
+      "content": null,
+      "tool_calls": [
+       {
+        "id": "call_ylNaI6kva8II0sVoi0rckse2",
+        "type": "function",
+        "function": {
+         "name": "count_keyword",
+         "arguments": "{\"keyword\":\"백탁\"}"
+        }
+       }
+      ]
      }
     }
    ],
    "usage": {
-    "total_tokens": 71,
-    "prompt_tokens": 41,
-    "completion_tokens": 30,
+    "total_tokens": 116,
+    "prompt_tokens": 101,
+    "completion_tokens": 15,
     "completion_tokens_details": {
      "reasoning_tokens": 0
     }
    }
-  },
+  }
+ ],
+ "2bcdcba54d86946f3c89": [
   {
    "choices": [
     {
@@ -5815,27 +5959,27 @@
      "reasoning_tokens": 0
     }
    }
-  }
- ],
- "7f416a3d2f13c836d674": [
+  },
   {
    "choices": [
     {
      "message": {
-      "content": "선크림을 바를 때 가장 중요한 팁은 \"충분한 양을 바르고, 고르게 펴 바르는 것\"입니다. 일반적으로는 얼굴에는 동전 크기만큼, 몸에는 한 손바닥 정도의 양을 사용하는 것이 좋습니다. 그리고 선크림은 피부에 바른 후 15~30분 정도 흡수시킨 후에 외출하는 것이 효과적입니다. 이렇게 하면 자외선으로부터 피부를 더 잘 보호할 수 있습니다.",
+      "content": "\"백탁\"이라는 용어가 언급된 리뷰는 1개입니다. 도움이 필요하시면 말씀해 주세요!",
       "tool_calls": null
      }
     }
    ],
    "usage": {
-    "total_tokens": 209,
-    "prompt_tokens": 103,
-    "completion_tokens": 106,
+    "total_tokens": 67,
+    "prompt_tokens": 41,
+    "completion_tokens": 26,
     "completion_tokens_details": {
      "reasoning_tokens": 0
     }
    }
-  },
+  }
+ ],
+ "7f416a3d2f13c836d674": [
   {
    "choices": [
     {
@@ -5867,6 +6011,24 @@
     "total_tokens": 233,
     "prompt_tokens": 103,
     "completion_tokens": 130,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  },
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "선크림을 바를 때 가장 중요한 팁은 충분한 양을 사용하는 것입니다. 보통 성인의 얼굴만을 기준으로 할 때, 약 1원 동전 크기(약 2mg)의 양을 사용하는 것이 좋으며, 몸 전체를 바를 때는 대략 30ml 정도(대략 한 컵의 양)가 필요합니다. 또한, 제품을 바르기 전에 반드시 잘 흔들어서 고르게 섞은 후, 외출 15~30분 전에 미리 발라야 효과가 더 좋습니다.",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 220,
+    "prompt_tokens": 103,
+    "completion_tokens": 117,
     "completion_tokens_details": {
      "reasoning_tokens": 0
     }
@@ -6195,6 +6357,33 @@
      "reasoning_tokens": 0
     }
    }
+  },
+  {
+   "choices": [
+    {
+     "message": {
+      "content": null,
+      "tool_calls": [
+       {
+        "id": "call_IJy90dFA1fTuMmzfMQOKJ4Fe",
+        "type": "function",
+        "function": {
+         "name": "avg_rating",
+         "arguments": "{}"
+        }
+       }
+      ]
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 61,
+    "prompt_tokens": 51,
+    "completion_tokens": 10,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
   }
  ],
  "aeccae54927324c4dd4a": [
@@ -6217,6 +6406,27 @@
      }
     ],
     "summary": "빠른 배송에 비해 품질이 낮아 실망했고, 가격은 괜찮았다."
+   }
+  },
+  {
+   "parsed": {
+    "overall": "부정",
+    "confidence": 0.85,
+    "aspects": [
+     {
+      "aspect": "배송",
+      "sentiment": "긍정"
+     },
+     {
+      "aspect": "품질",
+      "sentiment": "부정"
+     },
+     {
+      "aspect": "가격",
+      "sentiment": "중립"
+     }
+    ],
+    "summary": "빠른 배송에 비해 품질이 아쉬웠고, 가격은 적당했다."
    }
   }
  ],
@@ -6253,6 +6463,35 @@
     ],
     "summary": "제품 사용 후 피부 트러블 발생과 불만족스러운 고객 서비스 처리로 인해 전반적으로 부정적인 경험."
    }
+  },
+  {
+   "parsed": {
+    "overall": "부정",
+    "confidence": 0.85,
+    "aspects": [
+     {
+      "aspect": "사용감",
+      "sentiment": "부정"
+     },
+     {
+      "aspect": "효과",
+      "sentiment": "부정"
+     },
+     {
+      "aspect": "사용감",
+      "sentiment": "부정"
+     },
+     {
+      "aspect": "사용감",
+      "sentiment": "부정"
+     },
+     {
+      "aspect": "가격",
+      "sentiment": "중립"
+     }
+    ],
+    "summary": "제품 사용으로 인한 피부 트러블과 소통의 문제로 불만족한 경험을 했음."
+   }
   }
  ],
  "8a360a2d409436a51c66": [
@@ -6279,6 +6518,35 @@
      }
     ],
     "summary": "눈이 아프고 따가워서 사용할 수 없고, 가장 안 좋은 경험을 겪었음."
+   }
+  },
+  {
+   "parsed": {
+    "overall": "부정",
+    "confidence": 0.9,
+    "aspects": [
+     {
+      "aspect": "사용감",
+      "sentiment": "부정"
+     },
+     {
+      "aspect": "효과",
+      "sentiment": "부정"
+     },
+     {
+      "aspect": "가격",
+      "sentiment": "중립"
+     },
+     {
+      "aspect": "포장",
+      "sentiment": "중립"
+     },
+     {
+      "aspect": "가격",
+      "sentiment": "중립"
+     }
+    ],
+    "summary": "썬크림 사용 후 눈이 따갑고 아픈 경험으로 인해 부정적인 감정이 강하며, 최악의 제품으로 평가됨."
    }
   }
  ],
@@ -6310,6 +6578,31 @@
      }
     ],
     "summary": "선크림의 사용감과 향은 긍정적이나, 자외선 차단 효과가 부족하여 부정적인 경험이 있었다."
+   }
+  },
+  {
+   "parsed": {
+    "overall": "부정",
+    "confidence": 0.8,
+    "aspects": [
+     {
+      "aspect": "사용감",
+      "sentiment": "긍정"
+     },
+     {
+      "aspect": "향",
+      "sentiment": "긍정"
+     },
+     {
+      "aspect": "효과",
+      "sentiment": "부정"
+     },
+     {
+      "aspect": "기타",
+      "sentiment": "부정"
+     }
+    ],
+    "summary": "평상시 사용에는 만족하지만 자외선 차단 효과가 부족해 부정적인 경험을 함."
    }
   }
  ],
@@ -6350,6 +6643,43 @@
     ],
     "summary": "아이에게는 자극이 있어 사용을 피하는 것이 좋음."
    }
+  },
+  {
+   "parsed": {
+    "overall": "부정",
+    "confidence": 0.8,
+    "aspects": [
+     {
+      "aspect": "사용감",
+      "sentiment": "부정"
+     },
+     {
+      "aspect": "효과",
+      "sentiment": "부정"
+     },
+     {
+      "aspect": "자극",
+      "sentiment": "부정"
+     },
+     {
+      "aspect": "향",
+      "sentiment": "중립"
+     },
+     {
+      "aspect": "가격",
+      "sentiment": "중립"
+     },
+     {
+      "aspect": "포장",
+      "sentiment": "중립"
+     },
+     {
+      "aspect": "기타",
+      "sentiment": "부정"
+     }
+    ],
+    "summary": "아이에게는 자극이 있어 부정적인 반응이 있었다."
+   }
   }
  ],
  "c78897de184cd6c692a5": [
@@ -6376,6 +6706,47 @@
      }
     ],
     "summary": "사용법과 발림성에 대한 긍정적인 언급이 있지만, 눈이 따끔거리는 부작용과 성분에 대한 우려가 있어 전반적으로 중립적인 의견이 지배적이다."
+   }
+  },
+  {
+   "parsed": {
+    "overall": "중립",
+    "confidence": 0.7,
+    "aspects": [
+     {
+      "aspect": "사용감",
+      "sentiment": "긍정"
+     },
+     {
+      "aspect": "사용감",
+      "sentiment": "부정"
+     },
+     {
+      "aspect": "효과",
+      "sentiment": "부정"
+     },
+     {
+      "aspect": "가격",
+      "sentiment": "중립"
+     },
+     {
+      "aspect": "포장",
+      "sentiment": "중립"
+     },
+     {
+      "aspect": "향",
+      "sentiment": "중립"
+     },
+     {
+      "aspect": "기타",
+      "sentiment": "부정"
+     },
+     {
+      "aspect": "기타",
+      "sentiment": "부정"
+     }
+    ],
+    "summary": "사용법에 대한 언급과 함께, 제품의 발림성에 대한 긍정적인 피드백이 있으나, 눈 부위에 사용 시 부작용이 있어 주의가 필요하다는 내용."
    }
   }
  ],
@@ -6408,6 +6779,31 @@
     ],
     "summary": "가벼운 질감과 자연스러운 색상이 장점이나, 워터프루프가 아니라 아쉬움."
    }
+  },
+  {
+   "parsed": {
+    "overall": "중립",
+    "confidence": 0.8,
+    "aspects": [
+     {
+      "aspect": "사용감",
+      "sentiment": "긍정"
+     },
+     {
+      "aspect": "효과",
+      "sentiment": "부정"
+     },
+     {
+      "aspect": "품질",
+      "sentiment": "긍정"
+     },
+     {
+      "aspect": "기타",
+      "sentiment": "긍정"
+     }
+    ],
+    "summary": "발림성이 좋고 색이 자연스러워 데일리 사용에 적합하지만, 워터프루프 기능이 없어 물놀이에는 부적합."
+   }
   }
  ],
  "de88d52c880ac3002282": [
@@ -6438,6 +6834,35 @@
      }
     ],
     "summary": "피지오겔은 부드럽고 사용감이 좋지만 미백 효과는 부족하다는 인상이 있다."
+   }
+  },
+  {
+   "parsed": {
+    "overall": "중립",
+    "confidence": 0.75,
+    "aspects": [
+     {
+      "aspect": "사용감",
+      "sentiment": "긍정"
+     },
+     {
+      "aspect": "효과",
+      "sentiment": "부정"
+     },
+     {
+      "aspect": "포장",
+      "sentiment": "긍정"
+     },
+     {
+      "aspect": "향",
+      "sentiment": "중립"
+     },
+     {
+      "aspect": "품질",
+      "sentiment": "긍정"
+     }
+    ],
+    "summary": "사용감이 좋고 위생적인 포장이나 미백효과는 만족스럽지 않음."
    }
   }
  ],
@@ -6473,6 +6898,35 @@
      }
     ],
     "summary": "피지오겔 데일리모이스처테라피 유브이 썬로션은 사용감과 향이 좋은 제품으로, 바디에 편하게 사용할 수 있지만 메이크업 겸용으로는 아쉽다."
+   }
+  },
+  {
+   "parsed": {
+    "overall": "중립",
+    "confidence": 0.8,
+    "aspects": [
+     {
+      "aspect": "사용감",
+      "sentiment": "긍정"
+     },
+     {
+      "aspect": "향",
+      "sentiment": "긍정"
+     },
+     {
+      "aspect": "가격",
+      "sentiment": "중립"
+     },
+     {
+      "aspect": "효과",
+      "sentiment": "긍정"
+     },
+     {
+      "aspect": "사용감",
+      "sentiment": "부정"
+     }
+    ],
+    "summary": "제품의 사용감과 향이 긍정적이나, 메이크업 겸용으로 사용하는 것에 대한 아쉬움 표현."
    }
   }
  ],
@@ -6513,6 +6967,35 @@
     ],
     "summary": "피지오겔 선크림은 피부 자극이 없고 사용감이 우수하여 민감한 피부에 적합하다."
    }
+  },
+  {
+   "parsed": {
+    "overall": "긍정",
+    "confidence": 0.95,
+    "aspects": [
+     {
+      "aspect": "사용감",
+      "sentiment": "긍정"
+     },
+     {
+      "aspect": "효과",
+      "sentiment": "긍정"
+     },
+     {
+      "aspect": "자극",
+      "sentiment": "긍정"
+     },
+     {
+      "aspect": "가격",
+      "sentiment": "중립"
+     },
+     {
+      "aspect": "포장",
+      "sentiment": "긍정"
+     }
+    ],
+    "summary": "피지오겔 선크림은 피부에 자극이 없고 사용감이 좋아 가족 모두 사용하기에 좋습니다."
+   }
   }
  ],
  "1f649351f03220b75cc4": [
@@ -6544,6 +7027,31 @@
     ],
     "summary": "피지오겔 데일리 패밀리 썬 로션은 발림성이 좋고 촉촉한 효과가 있어 만족스럽지만, 첫째 아기에게는 잘 맞지 않는 점이 아쉽다."
    }
+  },
+  {
+   "parsed": {
+    "overall": "긍정",
+    "confidence": 0.85,
+    "aspects": [
+     {
+      "aspect": "사용감",
+      "sentiment": "긍정"
+     },
+     {
+      "aspect": "효과",
+      "sentiment": "긍정"
+     },
+     {
+      "aspect": "사용감",
+      "sentiment": "긍정"
+     },
+     {
+      "aspect": "포장",
+      "sentiment": "중립"
+     }
+    ],
+    "summary": "피지오겔 데일리 패밀리 썬 로션은 사용하기 편리하고 효과적인 제품으로, 바르면 촉촉하고 끈적임이 없어 좋다."
+   }
   }
  ],
  "8281d749c2ec5599077d": [
@@ -6566,6 +7074,27 @@
      }
     ],
     "summary": "포장은 좋고 가격이 저렴하지만 향이 강해 불편하다."
+   }
+  },
+  {
+   "parsed": {
+    "overall": "중립",
+    "confidence": 0.8,
+    "aspects": [
+     {
+      "aspect": "포장",
+      "sentiment": "긍정"
+     },
+     {
+      "aspect": "향",
+      "sentiment": "부정"
+     },
+     {
+      "aspect": "가격",
+      "sentiment": "긍정"
+     }
+    ],
+    "summary": "포장은 좋지만 향이 강하고 가격은 저렴함."
    }
   }
  ],
@@ -7607,7 +8136,7 @@
      {
       "original": "홍길동",
       "pii_type": "이름",
-      "masked": "홍**"
+      "masked": "홍길**"
      },
      {
       "original": "010-1234-5678",
@@ -7621,29 +8150,6 @@
      }
     ],
     "risk": "높음"
-   }
-  },
-  {
-   "parsed": {
-    "masked_text": "안녕하세요, 홍길동입니다. 010-****-5678로 연락주세요. 이메일은 h***@example.com 입니다.",
-    "items": [
-     {
-      "original": "홍길동",
-      "pii_type": "이름",
-      "masked": "홍**"
-     },
-     {
-      "original": "010-1234-5678",
-      "pii_type": "전화번호",
-      "masked": "010-****-5678"
-     },
-     {
-      "original": "hong@example.com",
-      "pii_type": "이메일",
-      "masked": "h***@example.com"
-     }
-    ],
-    "risk": "보통"
    }
   },
   {
@@ -7666,47 +8172,34 @@
       "masked": "h***@example.com"
      }
     ],
+    "risk": "보통"
+   }
+  },
+  {
+   "parsed": {
+    "masked_text": "안녕하세요, 홍길동입니다. 010-****-5678로 연락주세요. 이메일은 h***@example.com 입니다.",
+    "items": [
+     {
+      "original": "홍길동",
+      "pii_type": "이름",
+      "masked": "홍**"
+     },
+     {
+      "original": "010-1234-5678",
+      "pii_type": "전화번호",
+      "masked": "010-****-5678"
+     },
+     {
+      "original": "hong@example.com",
+      "pii_type": "이메일",
+      "masked": "h***@example.com"
+     }
+    ],
     "risk": "높음"
    }
   }
  ],
  "b332dcf8f29af8f8e891": [
-  {
-   "parsed": {
-    "masked_text": "주문자: 김***, 전화: 02-****-5432, 배송지: 부산시 해운대구 센텀로 99",
-    "items": [
-     {
-      "original": "김영희",
-      "pii_type": "이름",
-      "masked": "김***"
-     },
-     {
-      "original": "02-9876-5432",
-      "pii_type": "전화번호",
-      "masked": "02-****-5432"
-     }
-    ],
-    "risk": "보통"
-   }
-  },
-  {
-   "parsed": {
-    "masked_text": "주문자: 김**; 전화: 02-****-5432; 배송지: 부산시 해운대구 센텀로 99",
-    "items": [
-     {
-      "original": "김영희",
-      "pii_type": "이름",
-      "masked": "김**"
-     },
-     {
-      "original": "02-9876-5432",
-      "pii_type": "전화번호",
-      "masked": "02-****-5432"
-     }
-    ],
-    "risk": "보통"
-   }
-  },
   {
    "parsed": {
     "masked_text": "주문자: 김**, 전화: 02-****-5432, 배송지: 부산시 해운대구 센텀로 99",
@@ -7724,45 +8217,45 @@
     ],
     "risk": "보통"
    }
+  },
+  {
+   "parsed": {
+    "masked_text": "주문자: 김** , 전화: 02-****-5432, 배송지: 부산시 해운대구 센텀로 99",
+    "items": [
+     {
+      "original": "김영희",
+      "pii_type": "이름",
+      "masked": "김**"
+     },
+     {
+      "original": "02-9876-5432",
+      "pii_type": "전화번호",
+      "masked": "02-****-5432"
+     }
+    ],
+    "risk": "보통"
+   }
+  },
+  {
+   "parsed": {
+    "masked_text": "주문자: 김***, 전화: 02-****-5432, 배송지: 부산시 해운대구 센텀로 99",
+    "items": [
+     {
+      "original": "김영희",
+      "pii_type": "이름",
+      "masked": "김***"
+     },
+     {
+      "original": "02-9876-5432",
+      "pii_type": "전화번호",
+      "masked": "02-****-5432"
+     }
+    ],
+    "risk": "보통"
+   }
   }
  ],
  "76d911a454bfcc102fcf": [
-  {
-   "parsed": {
-    "masked_text": "고객정보 - 성명: 박** , 계좌: 국민은행 123-456-******",
-    "items": [
-     {
-      "original": "박철수",
-      "pii_type": "이름",
-      "masked": "박**"
-     },
-     {
-      "original": "국민은행 123-456-789012",
-      "pii_type": "계좌번호",
-      "masked": "국민은행 123-456-******"
-     }
-    ],
-    "risk": "보통"
-   }
-  },
-  {
-   "parsed": {
-    "masked_text": "고객정보 - 성명: 박**수, 계좌: 국민은행 123-456-******",
-    "items": [
-     {
-      "original": "박철수",
-      "pii_type": "이름",
-      "masked": "박**수"
-     },
-     {
-      "original": "국민은행 123-456-789012",
-      "pii_type": "계좌번호",
-      "masked": "국민은행 123-456-******"
-     }
-    ],
-    "risk": "보통"
-   }
-  },
   {
    "parsed": {
     "masked_text": "고객정보 - 성명: 박****, 계좌: 국민은행 123-456-789***",
@@ -7780,6 +8273,42 @@
     ],
     "risk": "높음"
    }
+  },
+  {
+   "parsed": {
+    "masked_text": "고객정보 - 성명: 박** , 계좌: 국민은행 123-456-****",
+    "items": [
+     {
+      "original": "박철수",
+      "pii_type": "이름",
+      "masked": "박**"
+     },
+     {
+      "original": "국민은행 123-456-789012",
+      "pii_type": "계좌번호",
+      "masked": "국민은행 123-456-****"
+     }
+    ],
+    "risk": "보통"
+   }
+  },
+  {
+   "parsed": {
+    "masked_text": "고객정보 - 성명: 박**, 계좌: 국민은행 123-456-******",
+    "items": [
+     {
+      "original": "박철수",
+      "pii_type": "이름",
+      "masked": "박**"
+     },
+     {
+      "original": "국민은행 123-456-789012",
+      "pii_type": "계좌번호",
+      "masked": "국민은행 123-456-******"
+     }
+    ],
+    "risk": "보통"
+   }
   }
  ],
  "28feabc5c2e5a81ed031": [
@@ -7792,29 +8321,6 @@
   }
  ],
  "6b56e20a43b0620e6d0f": [
-  {
-   "parsed": {
-    "masked_text": "이** 고객님 010-****-7777, 서울시 종로구 세종대로 1 로 배송 부탁드립니다.",
-    "items": [
-     {
-      "original": "이순신",
-      "pii_type": "이름",
-      "masked": "이**"
-     },
-     {
-      "original": "010-5555-7777",
-      "pii_type": "전화번호",
-      "masked": "010-****-7777"
-     },
-     {
-      "original": "서울시 종로구 세종대로 1",
-      "pii_type": "주소",
-      "masked": "서울시 종로구 세종대로 1"
-     }
-    ],
-    "risk": "보통"
-   }
-  },
   {
    "parsed": {
     "masked_text": "이**신 고객님 010-****-7777, 서울시 종로구 세종대로 1 로 배송 부탁드립니다.",
@@ -7859,6 +8365,29 @@
      }
     ],
     "risk": "높음"
+   }
+  },
+  {
+   "parsed": {
+    "masked_text": "** 고객님 010-****-7777, 서울시 종로구 세종대로 1 로 배송 부탁드립니다.",
+    "items": [
+     {
+      "original": "이순신",
+      "pii_type": "이름",
+      "masked": "**"
+     },
+     {
+      "original": "010-5555-7777",
+      "pii_type": "전화번호",
+      "masked": "010-****-7777"
+     },
+     {
+      "original": "서울시 종로구 세종대로 1",
+      "pii_type": "주소",
+      "masked": "서울시 종로구 세종대로 1"
+     }
+    ],
+    "risk": "보통"
    }
   }
  ],
@@ -8016,6 +8545,13 @@
     "topic": "가격",
     "has_request": false
    }
+  },
+  {
+   "parsed": {
+    "sentiment": "부정",
+    "topic": "기타",
+    "has_request": false
+   }
   }
  ],
  "fc7adca02669bebed4ed": [
@@ -8049,6 +8585,13 @@
     "sentiment": "부정",
     "topic": "기타",
     "has_request": false
+   }
+  },
+  {
+   "parsed": {
+    "sentiment": "부정",
+    "topic": "기타",
+    "has_request": true
    }
   }
  ],
@@ -8202,6 +8745,13 @@
     "topic": "효과",
     "has_request": false
    }
+  },
+  {
+   "parsed": {
+    "sentiment": "중립",
+    "topic": "내구성",
+    "has_request": false
+   }
   }
  ],
  "02daca30cbe9b6c04a1e": [
@@ -8235,6 +8785,13 @@
     "sentiment": "부정",
     "topic": "기타",
     "has_request": false
+   }
+  },
+  {
+   "parsed": {
+    "sentiment": "부정",
+    "topic": "기타",
+    "has_request": true
    }
   }
  ],
@@ -8286,6 +8843,13 @@
     "topic": "기타",
     "has_request": false
    }
+  },
+  {
+   "parsed": {
+    "sentiment": "부정",
+    "topic": "가격",
+    "has_request": false
+   }
   }
  ],
  "9896a7ab6d2d25d208bc": [
@@ -8300,6 +8864,13 @@
    "parsed": {
     "sentiment": "긍정",
     "topic": "착용감",
+    "has_request": false
+   }
+  },
+  {
+   "parsed": {
+    "sentiment": "긍정",
+    "topic": "기타",
     "has_request": false
    }
   }
@@ -8457,6 +9028,13 @@
     "topic": "효과",
     "has_request": false
    }
+  },
+  {
+   "parsed": {
+    "sentiment": "긍정",
+    "topic": "착용감",
+    "has_request": false
+   }
   }
  ],
  "063b8bc3d83364157522": [
@@ -8544,24 +9122,6 @@
    "choices": [
     {
      "message": {
-      "content": "다양한 채소와 향신료, 그리고 조미료가 담긴 그릇들이 나란히 배열된 이미지입니다.",
-      "tool_calls": null
-     }
-    }
-   ],
-   "usage": {
-    "total_tokens": 14218,
-    "prompt_tokens": 14189,
-    "completion_tokens": 29,
-    "completion_tokens_details": {
-     "reasoning_tokens": 0
-    }
-   }
-  },
-  {
-   "choices": [
-    {
-     "message": {
       "content": "사진에는 다양한 채소, 향신료, 그리고 조리 재료들이 배열되어 있습니다.",
       "tool_calls": null
      }
@@ -8593,27 +9153,27 @@
      "reasoning_tokens": 0
     }
    }
-  }
- ],
- "2c4fdaf4d52c9f5acdd8": [
+  },
   {
    "choices": [
     {
      "message": {
-      "content": "흰색 컵에 담긴 검은 커피와 그 옆에 놓인 스푼이 있는 사진입니다.",
+      "content": "이 사진에는 콩, 향신료, 다양한 채소와 허브가 담긴 여러 그릇이 함께 놓여 있습니다.",
       "tool_calls": null
      }
     }
    ],
    "usage": {
-    "total_tokens": 25551,
-    "prompt_tokens": 25523,
-    "completion_tokens": 28,
+    "total_tokens": 14218,
+    "prompt_tokens": 14189,
+    "completion_tokens": 29,
     "completion_tokens_details": {
      "reasoning_tokens": 0
     }
    }
-  },
+  }
+ ],
+ "2c4fdaf4d52c9f5acdd8": [
   {
    "choices": [
     {
@@ -8649,27 +9209,27 @@
      "reasoning_tokens": 0
     }
    }
-  }
- ],
- "efd84340eb5796822b4e": [
+  },
   {
    "choices": [
     {
      "message": {
-      "content": "이 이미지는 \"컨디션\"이라는 음료를 광고하고 있습니다.",
+      "content": "흰색 찻잔에 담긴 검은 커피와 그 옆에 놓인 작은 숟가락이 있는 이미지입니다.",
       "tool_calls": null
      }
     }
    ],
    "usage": {
-    "total_tokens": 25539,
+    "total_tokens": 25553,
     "prompt_tokens": 25523,
-    "completion_tokens": 16,
+    "completion_tokens": 30,
     "completion_tokens_details": {
      "reasoning_tokens": 0
     }
    }
-  },
+  }
+ ],
+ "efd84340eb5796822b4e": [
   {
    "choices": [
     {
@@ -8705,27 +9265,27 @@
      "reasoning_tokens": 0
     }
    }
-  }
- ],
- "d694369e0f3c175bf843": [
+  },
   {
    "choices": [
     {
      "message": {
-      "content": "첫 번째 이미지는 음료 광고로 경쾌하고 즐거운 분위기를 강조하며 소비를 유도하는 데 초점을 맞추고, 두 번째 이미지는 아기 동물의 귀여움을 통해 따뜻하고 편안한 감정을 전달하며 감정적인 연결을 증진하는 목적이 다릅니다.",
+      "content": "이 이미지는 '컨디션' 음료의 광고입니다.",
       "tool_calls": null
      }
     }
    ],
    "usage": {
-    "total_tokens": 39766,
-    "prompt_tokens": 39697,
-    "completion_tokens": 69,
+    "total_tokens": 25537,
+    "prompt_tokens": 25523,
+    "completion_tokens": 14,
     "completion_tokens_details": {
      "reasoning_tokens": 0
     }
    }
-  },
+  }
+ ],
+ "d694369e0f3c175bf843": [
   {
    "choices": [
     {
@@ -8757,6 +9317,24 @@
     "total_tokens": 39758,
     "prompt_tokens": 39697,
     "completion_tokens": 61,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  },
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "첫 번째 이미지는 경쾌하고 유쾌한 분위기로, 주로 음료 광고와 같은 상업적 목적을 위해 사용된다. 두 번째 이미지는 따뜻하고 귀여운 분위기로, 주로 애완동물의 사랑스러운 모습을 담아 사람들의 감정을 자극하는 데 쓰인다.",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 39767,
+    "prompt_tokens": 39697,
+    "completion_tokens": 70,
     "completion_tokens_details": {
      "reasoning_tokens": 0
     }
@@ -9534,6 +10112,25 @@
      }
     ]
    }
+  },
+  {
+   "parsed": {
+    "store_name": "TRAD KY TOAST CARTE",
+    "total_amount": 31000.0,
+    "payment": "현금",
+    "items": [
+     {
+      "name": "PB-1",
+      "quantity": 1,
+      "price": 28000.0
+     },
+     {
+      "name": "10%",
+      "quantity": 1,
+      "price": 2818.0
+     }
+    ]
+   }
   }
  ],
  "e6ef1c2191d4e1135eda": [
@@ -9591,6 +10188,25 @@
      }
     ]
    }
+  },
+  {
+   "parsed": {
+    "store_name": null,
+    "total_amount": 28000.0,
+    "payment": "현금",
+    "items": [
+     {
+      "name": "JASMINE MT ( L )",
+      "quantity": 1,
+      "price": 24000.0
+     },
+     {
+      "name": "COCONUT JELLY ( L )",
+      "quantity": 1,
+      "price": 4000.0
+     }
+    ]
+   }
   }
  ],
  "0a891b768124411f2b4b": [
@@ -9616,12 +10232,12 @@
     "urgency": "긴급",
     "emotion": "부정",
     "key_issues": [
-     "환불 절차 문의",
+     "환불 요청 방법 안내",
      "배송비 차감 여부",
-     "주문번호 확인"
+     "환불 처리 소요 시간"
     ],
     "order_number": "ORDER-230415",
-    "suggested_response": "주문번호 ORDER-230415에 대한 환불 절차를 안내드립니다. 환불 요청 시 배송비가 차감되는지 여부는 저희 고객센터로 문의하시면 자세히 안내해 드리겠습니다."
+    "suggested_response": "환불 요청은 고객센터를 통해 가능합니다. 배송비는 환불 금액에서 차감될 수 있습니다. 더 궁금한 점이 있으시면 고객센터로 문의해주세요!"
    }
   },
   {
@@ -9630,12 +10246,24 @@
     "urgency": "긴급",
     "emotion": "부정",
     "key_issues": [
-     "환불 요청 방법 안내",
-     "배송비 차감 여부",
-     "환불 처리 소요 시간"
+     "환불 절차에 대한 정보",
+     "배송비 차감 여부"
     ],
     "order_number": "ORDER-230415",
-    "suggested_response": "환불 요청은 고객센터를 통해 가능합니다. 배송비는 환불 금액에서 차감될 수 있습니다. 더 궁금한 점이 있으시면 고객센터로 문의해주세요!"
+    "suggested_response": "환불 요청은 회원님께서 주문 내역에서 요청하실 수 있습니다. 배송비 차감 여부는 상품에 따라 다르니, 구체적인 사항은 고객센터로 문의하시면 자세히 안내해드리겠습니다."
+   }
+  },
+  {
+   "parsed": {
+    "category": "환불",
+    "urgency": "긴급",
+    "emotion": "부정",
+    "key_issues": [
+     "환불 절차 안내",
+     "배송비 차감 여부"
+    ],
+    "order_number": "ORDER-230415",
+    "suggested_response": "주문 번호 ORDER-230415에 대한 환불 요청은 고객센터에서 처리해드립니다. 환불 절차와 관련하여 사용하신 결제 방법을 기준으로 안내드리겠습니다. 배송비는 일반적으로 차감되며, 정확한 금액은 환불 처리 시 확인이 필요합니다. 추가 문의사항은 고객센터로 연락 주시기 바랍니다."
    }
   }
  ],
@@ -9653,6 +10281,20 @@
     "order_number": null,
     "suggested_response": "현재 배송 상황을 확인하고 있습니다. 최대한 빠른 시일 내에 정확한 정보를 전달드리겠습니다."
    }
+  },
+  {
+   "parsed": {
+    "category": "배송",
+    "urgency": "긴급",
+    "emotion": "부정",
+    "key_issues": [
+     "배송 지연",
+     "배송 추적 없음",
+     "고객 요청 빠른 답변"
+    ],
+    "order_number": null,
+    "suggested_response": "배송 지연에 대해 사과드립니다. 배송 상황을 확인하고 신속하게 답변드리겠습니다."
+   }
   }
  ],
  "1233aaeb16801b926d0f": [
@@ -9668,6 +10310,20 @@
     ],
     "order_number": null,
     "suggested_response": "죄송합니다. 상품에 불량이 있어 교환이 가능합니다. 교환 절차를 안내해 드리겠습니다."
+   }
+  },
+  {
+   "parsed": {
+    "category": "교환",
+    "urgency": "보통",
+    "emotion": "부정",
+    "key_issues": [
+     "상품 불량",
+     "포장 손상",
+     "제품 스크래치"
+    ],
+    "order_number": null,
+    "suggested_response": "교환 가능 여부를 확인하여 안내하겠습니다. 불량상품의 사진을 첨부해주시면 빠른 처리가 가능합니다."
    }
   }
  ],
@@ -9685,6 +10341,20 @@
     "order_number": null,
     "suggested_response": "비밀번호 재설정 이메일이 수신되지 않는 문제를 해결하기 위해, 스팸 메일함을 확인해 보시고, 필요한 경우 고객센터로 문의하시기 바랍니다."
    }
+  },
+  {
+   "parsed": {
+    "category": "기술지원",
+    "urgency": "긴급",
+    "emotion": "부정",
+    "key_issues": [
+     "로그인 문제 발생",
+     "비밀번호 재설정 이메일 미수신",
+     "계정 접근 불가"
+    ],
+    "order_number": null,
+    "suggested_response": "비밀번호 재설정 이메일이 도착하지 않으면 스팸 폴더를 확인해주세요. 여전히 이메일을 받지 못한다면 고객센터에 직접 연락해 주시기 바랍니다."
+   }
   }
  ],
  "a5addb8112df4935a174": [
@@ -9700,6 +10370,20 @@
     ],
     "order_number": null,
     "suggested_response": "고객님, 소중한 후기 감사합니다! 앞으로도 좋은 서비스로 보답하겠습니다."
+   }
+  },
+  {
+   "parsed": {
+    "category": "기타",
+    "urgency": "보통",
+    "emotion": "긍정",
+    "key_issues": [
+     "배송이 빠르다",
+     "생일 선물 잘 받음",
+     "포장이 깔끔하다"
+    ],
+    "order_number": null,
+    "suggested_response": "고객님, 생일 선물을 제때 받으셨다니 정말 기쁩니다! 앞으로도 좋은 서비스 제공하겠습니다."
    }
   }
  ],
@@ -9717,6 +10401,20 @@
     "order_number": "ORDER-230512",
     "suggested_response": "주문번호 ORDER-230512의 노트북 파우치 색상 변경은 가능합니다. 교환 절차를 안내해드리겠습니다."
    }
+  },
+  {
+   "parsed": {
+    "category": "교환",
+    "urgency": "보통",
+    "emotion": "중립",
+    "key_issues": [
+     "주문 색상 변경 요청",
+     "노트북 파우치 색상 옵션",
+     "블랙에서 네이비로 변경 가능 여부"
+    ],
+    "order_number": "ORDER-230512",
+    "suggested_response": "고객님, 노트북 파우치의 색상 변경 요청에 대해 확인해보겠습니다. 변경 가능 여부를 빠르게 안내드리겠습니다."
+   }
   }
  ],
  "035eb055958290bcb989": [
@@ -9732,6 +10430,19 @@
     "order_number": null,
     "suggested_response": "신발 사이즈 교환을 원하실 경우, 제품을 수령하신 날로부터 7일 이내에 고객센터에 문의해주셔야 합니다. 교환 절차는 먼저 고객센터에 전화하시거나 이메일로 연락하시고, 반품을 위한 배송 방법을 안내받으시면 됩니다. 반품이 완료된 후, 요청하신 사이즈로 재발송해드립니다."
    }
+  },
+  {
+   "parsed": {
+    "category": "교환",
+    "urgency": "보통",
+    "emotion": "중립",
+    "key_issues": [
+     "신발 사이즈 교환 절차 문의",
+     "한 치수 큰 사이즈로 교환 요청"
+    ],
+    "order_number": null,
+    "suggested_response": "신발 사이즈 교환을 원하시는 경우, 고객센터 또는 홈페이지에서 교환 신청서를 작성해 주시면 됩니다. 추가 배송비가 발생할 수 있으며, 교환 절차에 대한 안내를 드리겠습니다."
+   }
   }
  ],
  "eed553fc10b1218d00f0": [
@@ -9745,6 +10456,21 @@
     "standardized": {
      "age_group": "20대",
      "job_category": "회사원",
+     "income_range": "3000만원 미만"
+    },
+    "quality": "우수"
+   }
+  },
+  {
+   "parsed": {
+    "age": 25,
+    "gender": "남성",
+    "job": "회사원",
+    "income": 3000,
+    "region": "서울",
+    "standardized": {
+     "age_group": "20대",
+     "job_category": "사무직",
      "income_range": "3000만원 미만"
     },
     "quality": "우수"
@@ -9766,6 +10492,21 @@
     },
     "quality": "우수"
    }
+  },
+  {
+   "parsed": {
+    "age": 25,
+    "gender": "여성",
+    "job": "개발자",
+    "income": 3500,
+    "region": "경기",
+    "standardized": {
+     "age_group": "20대",
+     "job_category": "정보·전문·서비스",
+     "income_range": "3000-5000만원"
+    },
+    "quality": "우수"
+   }
   }
  ],
  "15d64b8c8103790eef2f": [
@@ -9780,6 +10521,21 @@
      "age_group": "30대",
      "job_category": "교육",
      "income_range": "2000-3000만원"
+    },
+    "quality": "우수"
+   }
+  },
+  {
+   "parsed": {
+    "age": 30,
+    "gender": "남성",
+    "job": "teacher",
+    "income": 2800,
+    "region": "부산",
+    "standardized": {
+     "age_group": "30대",
+     "job_category": "교육",
+     "income_range": "3000만원 미만"
     },
     "quality": "우수"
    }
@@ -9800,6 +10556,21 @@
     },
     "quality": "우수"
    }
+  },
+  {
+   "parsed": {
+    "age": null,
+    "gender": "여성",
+    "job": "프리랜서",
+    "income": null,
+    "region": "서울",
+    "standardized": {
+     "age_group": null,
+     "job_category": null,
+     "income_range": null
+    },
+    "quality": "양호"
+   }
   }
  ],
  "27d04af3595e318c4267": [
@@ -9814,6 +10585,21 @@
      "age_group": "40대",
      "job_category": "자영업",
      "income_range": "5000만원 이상"
+    },
+    "quality": "우수"
+   }
+  },
+  {
+   "parsed": {
+    "age": null,
+    "gender": "남성",
+    "job": "자영업자",
+    "income": 5000,
+    "region": "충청도",
+    "standardized": {
+     "age_group": "40대",
+     "job_category": "자영업",
+     "income_range": "5000만원"
     },
     "quality": "우수"
    }
@@ -9834,6 +10620,21 @@
     },
     "quality": "양호"
    }
+  },
+  {
+   "parsed": {
+    "age": null,
+    "gender": "남성",
+    "job": null,
+    "income": null,
+    "region": "서울",
+    "standardized": {
+     "age_group": null,
+     "job_category": null,
+     "income_range": null
+    },
+    "quality": "불량"
+   }
   }
  ],
  "9d69fedb7773eb498829": [
@@ -9841,6 +10642,34 @@
    "parsed": {
     "gender": "남성",
     "style": "스포티",
+    "items": [
+     {
+      "item_type": "상의",
+      "color": "블랙",
+      "pattern": "무지"
+     },
+     {
+      "item_type": "하의",
+      "color": "네이비",
+      "pattern": "무지"
+     },
+     {
+      "item_type": "신발",
+      "color": "블랙",
+      "pattern": "무지"
+     },
+     {
+      "item_type": "액세서리",
+      "color": "블랙",
+      "pattern": "무지"
+     }
+    ]
+   }
+  },
+  {
+   "parsed": {
+    "gender": "남성",
+    "style": "캐주얼",
     "items": [
      {
       "item_type": "상의",
@@ -9889,6 +10718,29 @@
      }
     ]
    }
+  },
+  {
+   "parsed": {
+    "gender": "남성",
+    "style": "캐주얼",
+    "items": [
+     {
+      "item_type": "상의",
+      "color": "화이트",
+      "pattern": "기타"
+     },
+     {
+      "item_type": "하의",
+      "color": "레드",
+      "pattern": "기타"
+     },
+     {
+      "item_type": "신발",
+      "color": "화이트",
+      "pattern": "기타"
+     }
+    ]
+   }
   }
  ],
  "649f030a5895aa0ac23e": [
@@ -9909,6 +10761,24 @@
      }
     ]
    }
+  },
+  {
+   "parsed": {
+    "gender": "남성",
+    "style": "스포티",
+    "items": [
+     {
+      "item_type": "상의",
+      "color": "블랙",
+      "pattern": "기타"
+     },
+     {
+      "item_type": "하의",
+      "color": "화이트",
+      "pattern": "기타"
+     }
+    ]
+   }
   }
  ],
  "0c6b5538b408744c457e": [
@@ -9926,6 +10796,19 @@
       "item_type": "상의",
       "color": "화이트",
       "pattern": "프린트"
+     }
+    ]
+   }
+  },
+  {
+   "parsed": {
+    "gender": "남성",
+    "style": "스포티",
+    "items": [
+     {
+      "item_type": "상의",
+      "color": "화이트",
+      "pattern": "체크"
      }
     ]
    }
@@ -10065,6 +10948,306 @@
     "total_tokens": 0,
     "prompt_tokens": 0,
     "completion_tokens": 0,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  }
+ ],
+ "8bca47f7c1ab1997e25e": [
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "이 선크림 리뷰를 분석해보면 다음과 같은 주요 포인트가 있습니다:\n\n1. **발림성**: \"발림성은 좋은데\"라는 부분은 이 선크림이 피부에 잘 펴발라진다는 긍정적인 평가를 나타냅니다. 사용자가 제품의 사용감을 좋게 느끼고 있다는 점에서, 발림성이 중요한 요소로 작용하고 있음을 알 수 있습니다.\n\n2. **백탁**: \"백탁이 심해요\"라는 표현은 선크림을 바른 후 피부에 하얗게 남는 현상, 즉 백탁 현상이 심하다는 것을 의미합니다. 이는 사용자가 선크림의 외관적인 효과에 대해 불만족을 느끼고 있다는 것을 나타냅니다. 백탁은 특히 피부톤이 어두운 사람들에게는 단점으로 작용할 수 있습니다.\n\n3. **가격**: \"가격은 착합니다\"라는 부분은 이 제품이 가격 대비 가성비가 좋다는 긍정적인 평가를 포함하고 있습니다. 가격이 저렴하다는 점은 소비자에게 매력적으로 작용할 수 있습니다.\n\n종합적으로 이 리뷰는 선크림의 발림성과 가격에 대한 긍정적인 평가와 백탁 현상에 대한 부정적인 평가가 혼합되어 있습니다. 소비자는 발림성과 가격을 중요하게 생각하지만, 백탁 현상으로 인해 사용에 대한 고민이 있을 수 있습니다. 이 리뷰는 제품의 장단점을 잘 보여주고 있으며, 다른 소비자들에게도 유용한 정보가 될 것입니다.",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 372,
+    "prompt_tokens": 36,
+    "completion_tokens": 336,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  }
+ ],
+ "fd496f4b9b244149b7c7": [
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "1. 발림성 개선: 발림성은 긍정적이나 백탁 현상 해결 필요.\n2. 백탁 문제: 백탁을 줄이는 포뮬러 개발 고려.\n3. 가격 경쟁력: 가격은 긍정적이므로 유지.",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 123,
+    "prompt_tokens": 65,
+    "completion_tokens": 58,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  }
+ ],
+ "abdb75d5a8026ab0c203": [
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "배송은 빨랐지만 포장이 부실해 상자가 찌그러져 도착했습니다. 제품 자체는 만족스럽습니다.",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 68,
+    "prompt_tokens": 40,
+    "completion_tokens": 28,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  }
+ ],
+ "1593276cea36084b44bd": [
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "(1) 배송이 빨라서 좋았어요.  \n(2) 포장이 약해서 상자가 망가져서 아쉬웠어요.",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 107,
+    "prompt_tokens": 75,
+    "completion_tokens": 32,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  }
+ ],
+ "5a200bc25bf1876f9111": [
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "긍정",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 57,
+    "prompt_tokens": 54,
+    "completion_tokens": 3,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  }
+ ],
+ "7d3c6b3334a86eaa4cc6": [
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "긍정",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 92,
+    "prompt_tokens": 89,
+    "completion_tokens": 3,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  }
+ ],
+ "3dfbdfe070058588ac60": [
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "부정",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 44,
+    "prompt_tokens": 42,
+    "completion_tokens": 2,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  }
+ ],
+ "3033f2d8c8c13ec99752": [
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "이 리뷰의 감정은 **긍정적**과 **부정적**이 혼합된 상태입니다. \n\n**부정적인 이유:** \n- 배송은 빨랐지만 포장이 부실하여 상자가 찌그러져 왔다는 점에서 포장 상태에 대한 불만이 나타납니다.\n\n**긍정적인 이유:** \n- 제품 자체는 만족한다고 언급하고 있어, 제품의 품질이나 성능에 대해서는 긍정적인 평가를 하고 있습니다.\n\n결론적으로, 리뷰어는 배송과 포장에 대한 불만이 있지만, 제품의 품질에 대해서는 만족하고 있다는 점에서 긍정적인 감정을 표현하고 있습니다.",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 193,
+    "prompt_tokens": 47,
+    "completion_tokens": 146,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  }
+ ],
+ "4d9e3f3a12e150f5d789": [
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "{\"sentiment\": \"긍정\", \"reason\": \"제품 자체는 만족하지만 포장이 부실했다.\"}",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 103,
+    "prompt_tokens": 78,
+    "completion_tokens": 25,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  }
+ ],
+ "7fc308c8ed6719d8ba53": [
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "리뷰를 종합해보면, 고객들이 제품에 대해 다양한 의견을 가지고 있는 것 같습니다. \n\n1. **배송이 너무 느려요**: 배송 속도에 대한 불만이 있는 고객이 있는 것으로 보아, 배송 서비스 개선이 필요할 수 있습니다. 이는 고객 만족도에 큰 영향을 미칠 수 있습니다.\n\n2. **향이 좋고 발림성도 최고**: 제품의 향과 발림성에 대한 긍정적인 평가가 있어, 제품의 품질이나 사용감에 대해서는 만족하는 고객이 많다는 것을 알 수 있습니다.\n\n3. **가격 대비 별로**: 가격에 대한 불만이 있는 고객도 있어, 제품의 가성비에 대한 논의가 필요할 것 같습니다. 가격이 비싸다고 느끼는 고객이 많다면, 가격 조정이나 추가 가치를 제공하는 방법을 고려해볼 수 있습니다.\n\n종합적으로, 배송 속도 개선과 가격 조정 또는 추가 가치를 제공하는 것이 고객 만족도를 높이는 데 도움이 될 것 같습니다.",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 254,
+    "prompt_tokens": 36,
+    "completion_tokens": 218,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  }
+ ],
+ "3a59d9add76f314c5ddb": [
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "배송이 느려서 불만족스럽다.  \n향과 발림성이 우수해 긍정적이다.  \n가격 대비 만족도가 낮아 아쉽다.",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 123,
+    "prompt_tokens": 86,
+    "completion_tokens": 37,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  }
+ ],
+ "081ef1825337656bc4b1": [
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "두 번째 착장이 더 포멀합니다. 이유는 버튼업 셔츠와 슬랙스가 캐주얼한 상의와 청바지 조합보다 더 정제되고 격식 있는 스타일을 주기 때문입니다.",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 73751,
+    "prompt_tokens": 73702,
+    "completion_tokens": 49,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  }
+ ],
+ "8634d5f5f9e19373f0fd": [
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "자세밴드 리뷰 분석 결과, 부정적인 감정이 8건으로 가장 많았으며, 주요 불만 사항은 제품 품질 저하와 불편한 착용감입니다. 특히, 박음질 및 벨크로 문제로 인한 사용 어려움과 불쾌한 냄새가 주요 이슈로 나타났습니다. 향후 제품 개선을 통해 고객 만족도를 높일 필요가 있습니다.",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 470,
+    "prompt_tokens": 377,
+    "completion_tokens": 93,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  }
+ ],
+ "168b56134eda2d238c27": [
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "자세밴드 리뷰 분석 결과, 부정적인 감정이 8건으로 가장 많았으며, 주요 불만 사항은 제품 품질 저하와 착용감 불만족이었습니다. 특히, 바느질 및 벨크로 문제, 효과 부족, 불편한 디자인 등이 지적되었습니다. 향후 개선을 위해 품질 관리와 사용자 경험을 강화할 필요가 있습니다.",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 468,
+    "prompt_tokens": 382,
+    "completion_tokens": 86,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  }
+ ],
+ "e96e97029216135ce38c": [
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "자세밴드 리뷰에서 부정적인 감정이 9건으로, 주로 제품 품질과 착용감에 대한 불만이 많았습니다. 고객들은 어깨 교정 효과 부족, 사이즈 문제, 통증 및 불편함을 호소하며, 일부는 반품 대신 다른 제품 구매를 고려하고 있습니다. 전반적으로 품질 개선이 필요하다는 의견이 지배적입니다.",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 517,
+    "prompt_tokens": 428,
+    "completion_tokens": 89,
     "completion_tokens_details": {
      "reasoning_tokens": 0
     }
