@@ -11460,5 +11460,105 @@
     "needs_human": true
    }
   }
+ ],
+ "07521640995271adb331": [
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "요약 불가",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 66,
+    "prompt_tokens": 62,
+    "completion_tokens": 4,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  }
+ ],
+ "f7ad145722094ed81b56": [
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "요약 불가",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 101,
+    "prompt_tokens": 97,
+    "completion_tokens": 4,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  }
+ ],
+ "60e6466be6ffaf89cc2b": [
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "제품은 그럭저럭이라는 평가를 받았습니다.",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 173,
+    "prompt_tokens": 161,
+    "completion_tokens": 12,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  }
+ ],
+ "9f6b8b9e1a89be7bb315": [
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "별점: 3/5\n\n포장이 아쉬웠지만 제품이 쓸 만하다는 점에서 평균적인 평가를 주었습니다. 포장 개선이 필요해 보입니다.",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 77,
+    "prompt_tokens": 38,
+    "completion_tokens": 39,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  }
+ ],
+ "f99ecc6acbcd0010a3cd": [
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "3",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 76,
+    "prompt_tokens": 75,
+    "completion_tokens": 1,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  }
  ]
 }
