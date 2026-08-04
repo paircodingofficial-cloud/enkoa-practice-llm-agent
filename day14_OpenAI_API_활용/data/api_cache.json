@@ -11560,5 +11560,25 @@
     }
    }
   }
+ ],
+ "4064ed49281b92b5c4b3": [
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "{\"summary\":\"요약 불가\"}",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 123,
+    "prompt_tokens": 115,
+    "completion_tokens": 8,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  }
  ]
 }
