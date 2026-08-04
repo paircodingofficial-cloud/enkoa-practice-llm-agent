@@ -4,15 +4,15 @@
    "choices": [
     {
      "message": {
-      "content": "가을은 잎사귀가 황금빛으로 물들고 차가운 바람 속에 담배 연기 같은 따뜩한 추억을 품고 있는, 자연의 깊은 소리로 가득한 계절이다.",
+      "content": "가을은 나뭇잎이 황금빛으로 물들어가는 순간, 바람 속에 솔솔 피어오르는 떠나간 여름의 향수를 품은 계절이다.",
       "tool_calls": null
      }
     }
    ],
    "usage": {
-    "total_tokens": 73,
+    "total_tokens": 65,
     "prompt_tokens": 21,
-    "completion_tokens": 52,
+    "completion_tokens": 44,
     "completion_tokens_details": {
      "reasoning_tokens": 0
     }
@@ -22,15 +22,15 @@
    "choices": [
     {
      "message": {
-      "content": "가을은 자연이 주는 마지막 노래처럼, 찬란한 단풍과 함께 쓸쓸한 바람에 실려오는 추억의 향기로 우리 마음을 따스히 감싼다.",
+      "content": "가을은 나뭇잎이 황금빛으로 물들며, 찬바람이 살며시 마음의 여유를 안겨주는 계절이다.",
       "tool_calls": null
      }
     }
    ],
    "usage": {
-    "total_tokens": 68,
+    "total_tokens": 59,
     "prompt_tokens": 21,
-    "completion_tokens": 47,
+    "completion_tokens": 38,
     "completion_tokens_details": {
      "reasoning_tokens": 0
     }
@@ -40,7 +40,7 @@
    "choices": [
     {
      "message": {
-      "content": "가을은 찬란한 낙엽이 바람에 춤추며, 마음속 깊은 곳에 잊혀진 그리움의 мел로를 속삭이는 계절이다.",
+      "content": "가을은 나무들이 금빛으로 물들고, 상큼한 바람이 지나치며 마음속 깊은 곳에 쓸쓸한 아름다움을 일으키는 계절이다.",
       "tool_calls": null
      }
     }
@@ -60,42 +60,6 @@
    "choices": [
     {
      "message": {
-      "content": "\"한 잔의 휴식.\"",
-      "tool_calls": null
-     }
-    }
-   ],
-   "usage": {
-    "total_tokens": 25,
-    "prompt_tokens": 17,
-    "completion_tokens": 8,
-    "completion_tokens_details": {
-     "reasoning_tokens": 0
-    }
-   }
-  },
-  {
-   "choices": [
-    {
-     "message": {
-      "content": "커피는 \"신선한 에너지의 한 잔\"입니다.",
-      "tool_calls": null
-     }
-    }
-   ],
-   "usage": {
-    "total_tokens": 33,
-    "prompt_tokens": 17,
-    "completion_tokens": 16,
-    "completion_tokens_details": {
-     "reasoning_tokens": 0
-    }
-   }
-  },
-  {
-   "choices": [
-    {
-     "message": {
       "content": "\"활력을 주는 순간.\"",
       "tool_calls": null
      }
@@ -109,27 +73,45 @@
      "reasoning_tokens": 0
     }
    }
-  }
- ],
- "ac133e01c660dc68a4e8": [
+  },
   {
    "choices": [
     {
      "message": {
-      "content": "파이썬은 배우기 쉽고 강력한 기능을 갖춘 프로그래밍 언어로, 다양한 분야에서 소프트웨어 개발, 데이터 분석, 웹 개발 등에 사용됩니다.",
+      "content": "\"작은 기쁨의 순간.\"",
       "tool_calls": null
      }
     }
    ],
    "usage": {
-    "total_tokens": 64,
-    "prompt_tokens": 24,
-    "completion_tokens": 40,
+    "total_tokens": 26,
+    "prompt_tokens": 17,
+    "completion_tokens": 9,
     "completion_tokens_details": {
      "reasoning_tokens": 0
     }
    }
   },
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "커피: \"일상의 에너지.\"",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 26,
+    "prompt_tokens": 17,
+    "completion_tokens": 9,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  }
+ ],
+ "ac133e01c660dc68a4e8": [
   {
    "choices": [
     {
@@ -165,27 +147,27 @@
      "reasoning_tokens": 0
     }
    }
-  }
- ],
- "351e8ce85831d5618c31": [
+  },
   {
    "choices": [
     {
      "message": {
-      "content": "파이썬은 읽기 쉽고 배우기 쉬운 프로그래밍 언어로, 다양한 분야에서 유용하게 활용할 수 있어요! 😊💻",
+      "content": "파이썬은 배우기 쉽고 다양한 용도로 사용할 수 있는 고급 프로그래밍 언어입니다.",
       "tool_calls": null
      }
     }
    ],
    "usage": {
-    "total_tokens": 84,
-    "prompt_tokens": 49,
-    "completion_tokens": 35,
+    "total_tokens": 48,
+    "prompt_tokens": 24,
+    "completion_tokens": 24,
     "completion_tokens_details": {
      "reasoning_tokens": 0
     }
    }
-  },
+  }
+ ],
+ "351e8ce85831d5618c31": [
   {
    "choices": [
     {
@@ -221,27 +203,27 @@
      "reasoning_tokens": 0
     }
    }
-  }
- ],
- "4de9f105e2f766d1f27d": [
+  },
   {
    "choices": [
     {
      "message": {
-      "content": "물론이죠! 파이썬에서 리스트 컴프리헨션(List Comprehension)은 매우 유용한 기능입니다. 이를 통해 기존 리스트를 간결하게 변환할 수 있습니다. \n\n예를 들어, 0부터 9까지의 숫자 중 짝수만 포함하는 리스트를 만들고 싶다면 다음과 같이 작성할 수 있습니다.\n\n```python\neven_numbers = [x for x in range(10) if x % 2 == 0]\nprint(even_numbers)\n```\n\n이 코드는 `[0, 2, 4, 6, 8]`를 출력합니다. 리스트 컴프리헨션을 사용하면 코드가 더 간결하고 가독성이 좋아집니다!",
+      "content": "파이썬은 배우기 쉽고 다양한 용도로 사용되는 프로그래밍 언어로, 코드가 간결하고 읽기 쉬워서 초보자에게 딱이에요! 😊🐍✨",
       "tool_calls": null
      }
     }
    ],
    "usage": {
-    "total_tokens": 176,
-    "prompt_tokens": 21,
-    "completion_tokens": 155,
+    "total_tokens": 93,
+    "prompt_tokens": 49,
+    "completion_tokens": 44,
     "completion_tokens_details": {
      "reasoning_tokens": 0
     }
    }
-  },
+  }
+ ],
+ "4de9f105e2f766d1f27d": [
   {
    "choices": [
     {
@@ -273,6 +255,24 @@
     "total_tokens": 231,
     "prompt_tokens": 21,
     "completion_tokens": 210,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  },
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "물론입니다! 리스트의 아이템을 쉽게 역순으로 정렬하고 싶다면, `reverse()` 메서드나 슬라이싱을 사용할 수 있습니다. \n\n예를 들어:\n\n1. `reverse()` 메서드 사용:\n```python\nmy_list = [1, 2, 3, 4, 5]\nmy_list.reverse()\nprint(my_list)  # 출력: [5, 4, 3, 2, 1]\n```\n\n2. 슬라이싱을 사용:\n```python\nmy_list = [1, 2, 3, 4, 5]\nreversed_list = my_list[::-1]\nprint(reversed_list)  # 출력: [5, 4, 3, 2, 1]\n```\n\n이렇게 간단히 리스트를 역순으로 만들 수 있습니다!",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 198,
+    "prompt_tokens": 21,
+    "completion_tokens": 177,
     "completion_tokens_details": {
      "reasoning_tokens": 0
     }
@@ -321,24 +321,24 @@
  ],
  "471dfaa9d13bc201d475": [
   {
-   "output_text": "세종대왕은 한글, 즉 훈민정음을 창제하여 국민의 교육과 소통을 혁신한 조선의 위대한 왕입니다."
-  },
-  {
    "output_text": "세종대왕은 조선의 4대 국왕으로, 한글을 창제하여 국민의 문해력을 증진시킨 위대한 통치자입니다."
   },
   {
    "output_text": "세종대왕은 한글을 창제하고 과학, 음악, 농업 등 다양한 분야에서 발전을 이끈 조선 시대의 훌륭한 왕입니다."
+  },
+  {
+   "output_text": "세종대왕은 한글을 창제하고 과학, 문화, 농업 등 다양한 분야에서 혁신을 이룩한 조선의 제4대 왕입니다."
   }
  ],
  "815309d18d6edbb30e51": [
-  {
-   "output_text": "파이썬은 동적 타이핑과 간결한 문법을 가지며, 자바는 정적 타이핑과 강력한 객체 지향 기능이 특징인 언어입니다."
-  },
   {
    "output_text": "파이썬은 동적 타이핑과 높은 생산성을 제공하는 인터프리터 언어인 반면, 자바는 정적 타이핑과 강력한 객체 지향 프로그래밍을 지원하는 컴파일 언어입니다."
   },
   {
    "output_text": "파이썬은 동적 타이핑과 간결한 문법을 지닌 인터프리터 언어인 반면, 자바는 정적 타이핑을 사용하고 컴파일된 코드로 실행되는 객체 지향 언어입니다."
+  },
+  {
+   "output_text": "파이썬은 간결하고 유연한 문법으로 빠른 개발을 지원하는 인터프리터 언어인 반면, 자바는 정적 타입과 객체 지향 프로그래밍을 강조하며 성능과 플랫폼 독립성을 가진 컴파일 언어입니다."
   }
  ],
  "536b80419f0c9184e78b": [
@@ -366,15 +366,15 @@
    "choices": [
     {
      "message": {
-      "content": "단풍향기 카페",
+      "content": "하늘색 단풍 카페",
       "tool_calls": null
      }
     }
    ],
    "usage": {
-    "total_tokens": 33,
+    "total_tokens": 34,
     "prompt_tokens": 27,
-    "completion_tokens": 6,
+    "completion_tokens": 7,
     "completion_tokens_details": {
      "reasoning_tokens": 0
     }
@@ -384,7 +384,7 @@
    "choices": [
     {
      "message": {
-      "content": "단풍카페",
+      "content": "단풍 카페",
       "tool_calls": null
      }
     }
@@ -402,15 +402,15 @@
    "choices": [
     {
      "message": {
-      "content": "하늘색 단풍 카페",
+      "content": "단풍과 커피",
       "tool_calls": null
      }
     }
    ],
    "usage": {
-    "total_tokens": 34,
+    "total_tokens": 32,
     "prompt_tokens": 27,
-    "completion_tokens": 7,
+    "completion_tokens": 5,
     "completion_tokens_details": {
      "reasoning_tokens": 0
     }
@@ -460,24 +460,6 @@
    "choices": [
     {
      "message": {
-      "content": "슬로우브루",
-      "tool_calls": null
-     }
-    }
-   ],
-   "usage": {
-    "total_tokens": 29,
-    "prompt_tokens": 24,
-    "completion_tokens": 5,
-    "completion_tokens_details": {
-     "reasoning_tokens": 0
-    }
-   }
-  },
-  {
-   "choices": [
-    {
-     "message": {
       "content": "비커커피",
       "tool_calls": null
      }
@@ -509,27 +491,27 @@
      "reasoning_tokens": 0
     }
    }
-  }
- ],
- "340e7f8c35274a97616a": [
+  },
   {
    "choices": [
     {
      "message": {
-      "content": "인공지능(AI)의 역사는 다음과 같은 주요 단계로 나눌 수 있습니다.\n\n1. **초기 개념과 연구 (",
+      "content": "브루노트",
       "tool_calls": null
      }
     }
    ],
    "usage": {
-    "total_tokens": 47,
-    "prompt_tokens": 17,
-    "completion_tokens": 30,
+    "total_tokens": 28,
+    "prompt_tokens": 24,
+    "completion_tokens": 4,
     "completion_tokens_details": {
      "reasoning_tokens": 0
     }
    }
-  },
+  }
+ ],
+ "340e7f8c35274a97616a": [
   {
    "choices": [
     {
@@ -553,6 +535,24 @@
     {
      "message": {
       "content": "인공지능(AI)의 역사는 여러 가지 중요한 단계와 사건들로 구성되어 있습니다. 아래는 인공지능의 역사에 대한 간",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 47,
+    "prompt_tokens": 17,
+    "completion_tokens": 30,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  },
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "인공지능(AI)의 역사는 20세기 중반부터 시작되었습니다. 아래는 인공지능의 발전 과정을 주요 사건과",
       "tool_calls": null
      }
     }
@@ -724,24 +724,6 @@
    "choices": [
     {
      "message": {
-      "content": "사진 촬영을 추천해드릴게요! 주변의 아름다운 순간들을 포착하고, 창의력을 발휘할 수 있는 좋은 방법이에요. 자연 풍경, 일상 생활, 사람들 등 다양한 주제를 촬영하면서 즐거운 시간을 보낼 수 있습니다. 또한, 사진 편집을 통해 더 많은 재미를 느낄 수도 있어요!",
-      "tool_calls": null
-     }
-    }
-   ],
-   "usage": {
-    "total_tokens": 108,
-    "prompt_tokens": 30,
-    "completion_tokens": 78,
-    "completion_tokens_details": {
-     "reasoning_tokens": 0
-    }
-   }
-  },
-  {
-   "choices": [
-    {
-     "message": {
       "content": "사진 촬영을 추천해드릴게요! 자연이나 일상의 순간을 담는 재미가 있고, 창의력을 발휘할 수 있는 좋은 방법이에요. 또한, 나중에 찍은 사진들을 보며 추억을 되새길 수 있어요. 시작하기 쉽고, 스마트폰 카메라로도 충분히 즐길 수 있습니다!",
       "tool_calls": null
      }
@@ -773,27 +755,27 @@
      "reasoning_tokens": 0
     }
    }
-  }
- ],
- "f2dba18cb4ccf0aabf50": [
+  },
   {
    "choices": [
     {
      "message": {
-      "content": "낚시를 추천해줄게. 바다에서의 고요함과 자연을 느낄 수 있어.",
+      "content": "사진 촬영을 추천해드려요! 자연이나 일상 속에서 특별한 순간을 포착하는 재미가 있고, 창의력을 발휘할 수 있는 좋은 방법이에요. 또한, 사진을 찍으면서 새로운 장소를 탐험하고 사람들과 소통하는 기회도 많아져요. 시작하기 쉬운 취미이니 한번 도전해보세요!",
       "tool_calls": null
      }
     }
    ],
    "usage": {
-    "total_tokens": 56,
-    "prompt_tokens": 31,
-    "completion_tokens": 25,
+    "total_tokens": 111,
+    "prompt_tokens": 30,
+    "completion_tokens": 81,
     "completion_tokens_details": {
      "reasoning_tokens": 0
     }
    }
-  },
+  }
+ ],
+ "f2dba18cb4ccf0aabf50": [
   {
    "choices": [
     {
@@ -825,6 +807,24 @@
     "total_tokens": 55,
     "prompt_tokens": 31,
     "completion_tokens": 24,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  },
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "낚시를 추천해줄게. 바다의 고요함 속에서 시간 보내는 재미가 쏠쏠하지.",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 61,
+    "prompt_tokens": 31,
+    "completion_tokens": 30,
     "completion_tokens_details": {
      "reasoning_tokens": 0
     }
@@ -3372,33 +3372,6 @@
       "content": null,
       "tool_calls": [
        {
-        "id": "call_xu0ixN6RBLVRKNlYJCicDoxe",
-        "type": "function",
-        "function": {
-         "name": "count_by_rating",
-         "arguments": "{\"rating\":5}"
-        }
-       }
-      ]
-     }
-    }
-   ],
-   "usage": {
-    "total_tokens": 78,
-    "prompt_tokens": 63,
-    "completion_tokens": 15,
-    "completion_tokens_details": {
-     "reasoning_tokens": 0
-    }
-   }
-  },
-  {
-   "choices": [
-    {
-     "message": {
-      "content": null,
-      "tool_calls": [
-       {
         "id": "call_68M96lIMAok2JSYm7T0eoYv8",
         "type": "function",
         "function": {
@@ -3427,6 +3400,33 @@
       "tool_calls": [
        {
         "id": "call_6GM3jGoQOtK4FnU5Cw7ewxw0",
+        "type": "function",
+        "function": {
+         "name": "count_by_rating",
+         "arguments": "{\"rating\":5}"
+        }
+       }
+      ]
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 78,
+    "prompt_tokens": 63,
+    "completion_tokens": 15,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  },
+  {
+   "choices": [
+    {
+     "message": {
+      "content": null,
+      "tool_calls": [
+       {
+        "id": "call_cn9SabgtxDpPfSZlhinFtEkl",
         "type": "function",
         "function": {
          "name": "count_by_rating",
@@ -3511,33 +3511,6 @@
       "content": null,
       "tool_calls": [
        {
-        "id": "call_F3lzHVEDudMfBvOZduNyOF1t",
-        "type": "function",
-        "function": {
-         "name": "count_keyword",
-         "arguments": "{\"keyword\":\"백탁\"}"
-        }
-       }
-      ]
-     }
-    }
-   ],
-   "usage": {
-    "total_tokens": 77,
-    "prompt_tokens": 62,
-    "completion_tokens": 15,
-    "completion_tokens_details": {
-     "reasoning_tokens": 0
-    }
-   }
-  },
-  {
-   "choices": [
-    {
-     "message": {
-      "content": null,
-      "tool_calls": [
-       {
         "id": "call_JronoOSVQM2ihiMBODPYoN6s",
         "type": "function",
         "function": {
@@ -3566,6 +3539,33 @@
       "tool_calls": [
        {
         "id": "call_5CNyJQzGdgNl5Ho7Zq3yI3xy",
+        "type": "function",
+        "function": {
+         "name": "count_keyword",
+         "arguments": "{\"keyword\":\"백탁\"}"
+        }
+       }
+      ]
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 77,
+    "prompt_tokens": 62,
+    "completion_tokens": 15,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  },
+  {
+   "choices": [
+    {
+     "message": {
+      "content": null,
+      "tool_calls": [
+       {
+        "id": "call_iGvSaaO3zgpg0O5tRREiPgdW",
         "type": "function",
         "function": {
          "name": "count_keyword",
@@ -3618,6 +3618,24 @@
     "total_tokens": 227,
     "prompt_tokens": 176,
     "completion_tokens": 51,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  },
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "{\"sentiment\":\"부정\",\"summary\":\"제품 사용 후 피부가 매우 건조하고 땡기는 느낌이 심하며, 주름이 생기는 문제가 있어 매우 불만족스러운 경험을 하고 있습니다.\"}",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 222,
+    "prompt_tokens": 176,
+    "completion_tokens": 46,
     "completion_tokens_details": {
      "reasoning_tokens": 0
     }
@@ -3676,6 +3694,24 @@
     "total_tokens": 333,
     "prompt_tokens": 253,
     "completion_tokens": 80,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  },
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "{\"sentiment\":\"부정\",\"summary\":\"제품이 촉촉할 것이라는 기대와 달리 뻑뻑하다는 불만이 있으며, 톤업 효과도 피부색과 맞지 않아 아쉬움을 표현하고 있습니다.\"}",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 306,
+    "prompt_tokens": 253,
+    "completion_tokens": 53,
     "completion_tokens_details": {
      "reasoning_tokens": 0
     }
@@ -3743,24 +3779,6 @@
    "choices": [
     {
      "message": {
-      "content": "{\"sentiment\":\"부정\",\"summary\":\"제품의 질감과 느낌이 마음에 들지 않아 불만족스러운 경험을 했으며, 피부에 밀착되는 느낌이 불편하고 찝찝하다는 의견이 있습니다. 사용 후 피부에 트러블이 생길 가능성에 대한 우려도 나타나고 있습니다.\"}",
-      "tool_calls": null
-     }
-    }
-   ],
-   "usage": {
-    "total_tokens": 395,
-    "prompt_tokens": 321,
-    "completion_tokens": 74,
-    "completion_tokens_details": {
-     "reasoning_tokens": 0
-    }
-   }
-  },
-  {
-   "choices": [
-    {
-     "message": {
       "content": "{\"sentiment\":\"부정\",\"summary\":\"제품의 질감과 느낌이 마음에 들지 않아 실망스러웠고, 피부에 밀착되는 느낌이 불편하여 사용을 중단할까 고민하고 있다.\"}",
       "tool_calls": null
      }
@@ -3788,6 +3806,24 @@
     "total_tokens": 387,
     "prompt_tokens": 321,
     "completion_tokens": 66,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  },
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "{\"sentiment\":\"부정\",\"summary\":\"제품의 질감과 느낌이 마음에 들지 않아 실망스러웠고, 피부에 밀착되는 느낌이 불편하다는 의견이 주를 이루고 있습니다. 사용 후 피부에 트러블이 생길 가능성에 대한 우려도 나타나고 있습니다.\"}",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 391,
+    "prompt_tokens": 321,
+    "completion_tokens": 70,
     "completion_tokens_details": {
      "reasoning_tokens": 0
     }
@@ -4000,6 +4036,24 @@
      "reasoning_tokens": 0
     }
    }
+  },
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "{\"sentiment\":\"긍정\",\"summary\":\"이자녹스 유브이 선 프로 365 데일리 커버 듀오 기획 세트는 자외선 차단과 톤업 효과가 뛰어나며, 두 개의 제품을 저렴하게 구매할 수 있어 만족스럽습니다. 강력한 SPF와 워터프루프 기능으로 데일리 사용에 적합한 제품입니다.\"}",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 401,
+    "prompt_tokens": 311,
+    "completion_tokens": 90,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
   }
  ],
  "0fc54e63b1a259346908": [
@@ -4065,24 +4119,6 @@
    "choices": [
     {
      "message": {
-      "content": "선크림을 고를 때 가장 중요한 점은 SPF(자외선 차단 지수)입니다. 일반적으로 SPF 30 이상을 선택하는 것이 좋습니다. SPF 수치가 높을수록 자외선 B(UV-B)로부터 더 잘 보호해 주므로, 자신의 피부 타입과 활동 패턴에 맞춰 적절한 SPF를 선택하세요.",
-      "tool_calls": null
-     }
-    }
-   ],
-   "usage": {
-    "total_tokens": 101,
-    "prompt_tokens": 22,
-    "completion_tokens": 79,
-    "completion_tokens_details": {
-     "reasoning_tokens": 0
-    }
-   }
-  },
-  {
-   "choices": [
-    {
-     "message": {
       "content": "선크림을 고를 때 가장 중요한 점은 SPF 지수입니다. SPF 지수는 자외선 B(UVB) 차단 능력을 나타내며, SPF 30 이상을 선택하는 것이 일반적으로 권장됩니다.",
       "tool_calls": null
      }
@@ -4114,6 +4150,24 @@
      "reasoning_tokens": 0
     }
    }
+  },
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "선크림을 고를 때 가장 중요한 점은 **SPF 지수**입니다. SPF 지수가 높을수록 햇볕으로부터 피부를 보호할 수 있는 능력이 강해집니다. 피부 타입과 활동에 맞는 적절한 SPF를 선택하는 것이 중요합니다.",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 85,
+    "prompt_tokens": 22,
+    "completion_tokens": 63,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
   }
  ],
  "8d651a194d9a949c2c39": [
@@ -4137,24 +4191,6 @@
   }
  ],
  "2eedd975710ebdd83ea2": [
-  {
-   "choices": [
-    {
-     "message": {
-      "content": "이 리뷰는 특정 제품에 대한 부정적인 경험을 담고 있습니다. 사용자가 느낀 주요 문제점은 다음과 같습니다:\n\n1. **건조함**: 제품을 바른 후 피부가 촉촉하지 않고 오히려 건조해진다고 언급하고 있습니다. 이는 제품의 보습력이 부족하다는 것을 의미합니다.\n\n2. **피부 땡김**: 사용자는 피부가 땡기고 불편함을 느낀다고 하며, 이는 제품이 피부에 적절한 수분을 공급하지 못하고 있다는 신호일 수 있습니다.\n\n3. **주름**: 눈가에 주름이 심하게 생긴다고 하며, 이는 제품이 피부의 탄력을 저하시켰거나, 피부에 자극을 주었을 가능성을 시사합니다.\n\n4. **남편의 경험**: 남편도 같은 제품을 사용한 후 주름이 생겼다고 하여, 이 제품이 두 사람 모두에게 부정적인 영향을 미쳤음을 강조하고 있습니다.\n\n5. **지성 피부**: 사용자가 지성 피부를 가지고 있다고 언급했는데, 이는 제품이 지성 피부에 적합하지 않거나, 수분 공급이 부족하여 더욱 건조함을 느끼게 할 수 있습니다.\n\n종합적으로 볼 때, 이 제품은 보습력이 부족하고, 피부에 자극을 주어 건조함과 주름을 유발하는 것으로 보입니다. 지성 피부를 가진 사용자에게는 더욱 부적합할 수 있습니다. 이러한 피드백은 제품 개선이나 다른 대체 제품을 찾는 데 도움이 될 수 있습니다.",
-      "tool_calls": null
-     }
-    }
-   ],
-   "usage": {
-    "total_tokens": 449,
-    "prompt_tokens": 103,
-    "completion_tokens": 346,
-    "completion_tokens_details": {
-     "reasoning_tokens": 0
-    }
-   }
-  },
   {
    "choices": [
     {
@@ -4186,6 +4222,24 @@
     "total_tokens": 378,
     "prompt_tokens": 103,
     "completion_tokens": 275,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  },
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "이 리뷰는 특정 제품에 대한 부정적인 경험을 담고 있습니다. 사용자가 느낀 주요 문제점은 다음과 같습니다:\n\n1. **건조함**: 제품을 바른 후 피부가 촉촉하지 않고 오히려 건조해진다고 언급하고 있습니다. 이는 제품의 보습력이 부족하다는 것을 의미합니다.\n\n2. **피부 땡김**: 사용자는 피부가 땡기고 불편함을 느낀다고 하며, 이는 제품이 피부에 적절한 수분을 공급하지 못하고 있다는 신호일 수 있습니다.\n\n3. **주름**: 눈가에 주름이 심하게 생긴다고 언급하며, 남편도 같은 문제를 경험했다고 합니다. 이는 제품이 피부의 탄력을 저하시킬 수 있다는 것을 암시합니다.\n\n4. **지성 피부**: 사용자가 지성 피부를 가지고 있다고 명시했는데, 이는 제품이 지성 피부에 적합하지 않거나, 오히려 피부 상태를 악화시킬 수 있음을 나타냅니다.\n\n이 리뷰는 제품이 특정 피부 타입(지성 피부)에 적합하지 않거나, 사용자의 기대에 미치지 못했음을 보여줍니다. 제품의 성분이나 사용 방법을 재검토하거나, 다른 제품을 찾아보는 것이 좋을 것 같습니다.",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 390,
+    "prompt_tokens": 103,
+    "completion_tokens": 287,
     "completion_tokens_details": {
      "reasoning_tokens": 0
     }
@@ -6585,6 +6639,27 @@
     ],
     "summary": "피부가 심하게 건조하고 땡기는 현상이 발생, 남편도 같은 문제를 겪음."
    }
+  },
+  {
+   "parsed": {
+    "overall": "부정",
+    "confidence": 0.85,
+    "aspects": [
+     {
+      "aspect": "사용감",
+      "sentiment": "부정"
+     },
+     {
+      "aspect": "효과",
+      "sentiment": "부정"
+     },
+     {
+      "aspect": "가격",
+      "sentiment": "중립"
+     }
+    ],
+    "summary": "제품 사용 후 피부가 너무 건조해지고 주름이 생겨서 불만족이다."
+   }
   }
  ],
  "18021cdb37dc3a696f6f": [
@@ -6632,6 +6707,23 @@
      }
     ],
     "summary": "정품이 아닐 수 있으며, 포장 불량으로 인해 불만족을 표현하고 있음."
+   }
+  },
+  {
+   "parsed": {
+    "overall": "부정",
+    "confidence": 0.85,
+    "aspects": [
+     {
+      "aspect": "포장",
+      "sentiment": "부정"
+     },
+     {
+      "aspect": "품질",
+      "sentiment": "부정"
+     }
+    ],
+    "summary": "포장이 불량하고 품질에 대한 신뢰가 떨어진다."
    }
   }
  ],
@@ -6681,6 +6773,27 @@
     ],
     "summary": "기대보다 뻑뻑하고 톤업 효과가 피부톤에 맞지 않음."
    }
+  },
+  {
+   "parsed": {
+    "overall": "부정",
+    "confidence": 0.75,
+    "aspects": [
+     {
+      "aspect": "사용감",
+      "sentiment": "부정"
+     },
+     {
+      "aspect": "효과",
+      "sentiment": "부정"
+     },
+     {
+      "aspect": "가격",
+      "sentiment": "중립"
+     }
+    ],
+    "summary": "촉촉함이 기대에 못 미치고 피부에 맞지 않아 톤업 효과가 둥둥 떠보임."
+   }
   }
  ],
  "4e5cba4327325e68078e": [
@@ -6728,6 +6841,27 @@
      }
     ],
     "summary": "발림성은 좋지만 번들거림과 끈적임으로 사용이 불편"
+   }
+  },
+  {
+   "parsed": {
+    "overall": "부정",
+    "confidence": 0.75,
+    "aspects": [
+     {
+      "aspect": "사용감",
+      "sentiment": "부정"
+     },
+     {
+      "aspect": "효과",
+      "sentiment": "부정"
+     },
+     {
+      "aspect": "기타",
+      "sentiment": "부정"
+     }
+    ],
+    "summary": "발림성은 좋지만 번들거림과 끈적거림으로 인해 불편함을 느낌. 피부 당김도 있어 외출용으로만 사용하고 다른 수분감 있는 제품을 구매함."
    }
   }
  ],
@@ -6785,6 +6919,27 @@
     ],
     "summary": "제품의 사용감과 효과에 대해 불만족스러움을 표현하며, 피부에 밀착된 느낌이 불쾌하다고 언급."
    }
+  },
+  {
+   "parsed": {
+    "overall": "부정",
+    "confidence": 0.85,
+    "aspects": [
+     {
+      "aspect": "사용감",
+      "sentiment": "부정"
+     },
+     {
+      "aspect": "효과",
+      "sentiment": "부정"
+     },
+     {
+      "aspect": "기타",
+      "sentiment": "부정"
+     }
+    ],
+    "summary": "되직한 질감과 밝지 않은 색상에도 불구하고 피부에 밀착되는 느낌이 찝찝하여 불만족스러운 사용 경험."
+   }
   }
  ],
  "f97bf32ac06b5b4f069e": [
@@ -6828,6 +6983,35 @@
      }
     ],
     "summary": "발림성 좋지만 끈적임과 답답함이 문제."
+   }
+  },
+  {
+   "parsed": {
+    "overall": "부정",
+    "confidence": 0.85,
+    "aspects": [
+     {
+      "aspect": "사용감",
+      "sentiment": "부정"
+     },
+     {
+      "aspect": "효과",
+      "sentiment": "긍정"
+     },
+     {
+      "aspect": "가격",
+      "sentiment": "중립"
+     },
+     {
+      "aspect": "포장",
+      "sentiment": "중립"
+     },
+     {
+      "aspect": "기타",
+      "sentiment": "부정"
+     }
+    ],
+    "summary": "발림성은 좋지만 끈적임과 답답함으로 인해 부정적인 경험."
    }
   }
  ],
@@ -6885,6 +7069,35 @@
     ],
     "summary": "이자녹스 UV 썬 프로는 사용감이 좋고 피부 커버력도 강하며, 간편한 외출 시에 유용하다는 긍정적인 리뷰입니다."
    }
+  },
+  {
+   "parsed": {
+    "overall": "긍정",
+    "confidence": 0.95,
+    "aspects": [
+     {
+      "aspect": "사용감",
+      "sentiment": "긍정"
+     },
+     {
+      "aspect": "효과",
+      "sentiment": "긍정"
+     },
+     {
+      "aspect": "가격",
+      "sentiment": "중립"
+     },
+     {
+      "aspect": "포장",
+      "sentiment": "긍정"
+     },
+     {
+      "aspect": "기타",
+      "sentiment": "긍정"
+     }
+    ],
+    "summary": "전반적으로 긍정적인 제품 경험을 갖고 있으며, 사용감과 효과가 뛰어남."
+   }
   }
  ],
  "6a89fd6132da2f75ae1b": [
@@ -6940,6 +7153,31 @@
      }
     ],
     "summary": "브랜드와 제품 모두 마음에 들며 양도 많아 만족하는 리뷰입니다."
+   }
+  },
+  {
+   "parsed": {
+    "overall": "긍정",
+    "confidence": 0.9,
+    "aspects": [
+     {
+      "aspect": "품질",
+      "sentiment": "긍정"
+     },
+     {
+      "aspect": "가격",
+      "sentiment": "긍정"
+     },
+     {
+      "aspect": "사용감",
+      "sentiment": "긍정"
+     },
+     {
+      "aspect": "기타",
+      "sentiment": "긍정"
+     }
+    ],
+    "summary": "브랜드와 제품 모두 마음에 들며, 양이 많아 만족스럽다."
    }
   }
  ],
@@ -7001,6 +7239,35 @@
     ],
     "summary": "민감성 피부에 잘 맞는 저자극 선크림으로 자연스러운 톤업 효과와 가격 대비 높은 퀄리티를 장점으로 추천합니다."
    }
+  },
+  {
+   "parsed": {
+    "overall": "긍정",
+    "confidence": 0.9,
+    "aspects": [
+     {
+      "aspect": "품질",
+      "sentiment": "긍정"
+     },
+     {
+      "aspect": "사용감",
+      "sentiment": "긍정"
+     },
+     {
+      "aspect": "가격",
+      "sentiment": "긍정"
+     },
+     {
+      "aspect": "효과",
+      "sentiment": "긍정"
+     },
+     {
+      "aspect": "사용감",
+      "sentiment": "긍정"
+     }
+    ],
+    "summary": "민감성 피부에 적합하며 톤업 효과와 사용감이 좋아 추천합니다."
+   }
   }
  ],
  "27214bddd3820540e6f9": [
@@ -7056,6 +7323,35 @@
      }
     ],
     "summary": "이자녹스 유브이 선 프로 365 데일리 커버 듀오 기획 세트는 뛰어난 자외선 차단 효과와 자연스러운 톤업 효과로 만족스러운 제품입니다. 가격도 저렴하게 두 개를 구매할 수 있어 가성비가 좋습니다."
+   }
+  },
+  {
+   "parsed": {
+    "overall": "긍정",
+    "confidence": 0.9,
+    "aspects": [
+     {
+      "aspect": "품질",
+      "sentiment": "긍정"
+     },
+     {
+      "aspect": "가격",
+      "sentiment": "긍정"
+     },
+     {
+      "aspect": "효과",
+      "sentiment": "긍정"
+     },
+     {
+      "aspect": "사용감",
+      "sentiment": "긍정"
+     },
+     {
+      "aspect": "포장",
+      "sentiment": "긍정"
+     }
+    ],
+    "summary": "이자녹스 유브이 선 프로 365 데일리 커버 듀오 세트는 뛰어난 자외선 차단 및 톤업 효과로 매우 만족스러워요. 배송도 빠르고 가격도 합리적입니다."
    }
   }
  ],
@@ -7349,6 +7645,29 @@
     ],
     "risk": "보통"
    }
+  },
+  {
+   "parsed": {
+    "masked_text": "안녕하세요, 홍길동입니다. 010-****-5678로 연락주세요. 이메일은 h***@example.com 입니다.",
+    "items": [
+     {
+      "original": "홍길동",
+      "pii_type": "이름",
+      "masked": "홍길**"
+     },
+     {
+      "original": "010-1234-5678",
+      "pii_type": "전화번호",
+      "masked": "010-****-5678"
+     },
+     {
+      "original": "hong@example.com",
+      "pii_type": "이메일",
+      "masked": "h***@example.com"
+     }
+    ],
+    "risk": "높음"
+   }
   }
  ],
  "b332dcf8f29af8f8e891": [
@@ -7373,6 +7692,24 @@
   {
    "parsed": {
     "masked_text": "주문자: 김**; 전화: 02-****-5432; 배송지: 부산시 해운대구 센텀로 99",
+    "items": [
+     {
+      "original": "김영희",
+      "pii_type": "이름",
+      "masked": "김**"
+     },
+     {
+      "original": "02-9876-5432",
+      "pii_type": "전화번호",
+      "masked": "02-****-5432"
+     }
+    ],
+    "risk": "보통"
+   }
+  },
+  {
+   "parsed": {
+    "masked_text": "주문자: 김**, 전화: 02-****-5432, 배송지: 부산시 해운대구 센텀로 99",
     "items": [
      {
       "original": "김영희",
@@ -7424,6 +7761,24 @@
      }
     ],
     "risk": "보통"
+   }
+  },
+  {
+   "parsed": {
+    "masked_text": "고객정보 - 성명: 박****, 계좌: 국민은행 123-456-789***",
+    "items": [
+     {
+      "original": "박철수",
+      "pii_type": "이름",
+      "masked": "박****"
+     },
+     {
+      "original": "국민은행 123-456-789012",
+      "pii_type": "계좌번호",
+      "masked": "국민은행 123-456-789***"
+     }
+    ],
+    "risk": "높음"
    }
   }
  ],
@@ -7481,6 +7836,29 @@
      }
     ],
     "risk": "보통"
+   }
+  },
+  {
+   "parsed": {
+    "masked_text": "이순신 고객님 010-****-7777, 서울시 종로구 세종대로 1 로 배송 부탁드립니다.",
+    "items": [
+     {
+      "original": "이순신",
+      "pii_type": "이름",
+      "masked": "이**"
+     },
+     {
+      "original": "010-5555-7777",
+      "pii_type": "전화번호",
+      "masked": "010-****-7777"
+     },
+     {
+      "original": "서울시 종로구 세종대로 1",
+      "pii_type": "주소",
+      "masked": "서울시 종로구 세종대로 1"
+     }
+    ],
+    "risk": "높음"
    }
   }
  ],
@@ -7656,6 +8034,13 @@
     "topic": "기타",
     "has_request": false
    }
+  },
+  {
+   "parsed": {
+    "sentiment": "부정",
+    "topic": "가격",
+    "has_request": false
+   }
   }
  ],
  "d55fdd0381363b480c4a": [
@@ -7756,6 +8141,13 @@
    "parsed": {
     "sentiment": "부정",
     "topic": "내구성",
+    "has_request": false
+   }
+  },
+  {
+   "parsed": {
+    "sentiment": "부정",
+    "topic": "기타",
     "has_request": false
    }
   }
@@ -7860,6 +8252,13 @@
     "topic": "착용감",
     "has_request": false
    }
+  },
+  {
+   "parsed": {
+    "sentiment": "중립",
+    "topic": "기타",
+    "has_request": false
+   }
   }
  ],
  "464aace7cbbcbabf82f9": [
@@ -7893,6 +8292,13 @@
   {
    "parsed": {
     "sentiment": "중립",
+    "topic": "착용감",
+    "has_request": false
+   }
+  },
+  {
+   "parsed": {
+    "sentiment": "긍정",
     "topic": "착용감",
     "has_request": false
    }
@@ -7944,6 +8350,13 @@
    "parsed": {
     "sentiment": "부정",
     "topic": "착용감",
+    "has_request": false
+   }
+  },
+  {
+   "parsed": {
+    "sentiment": "부정",
+    "topic": "기타",
     "has_request": false
    }
   }
@@ -8012,6 +8425,13 @@
     "topic": "기타",
     "has_request": false
    }
+  },
+  {
+   "parsed": {
+    "sentiment": "긍정",
+    "topic": "효과",
+    "has_request": false
+   }
   }
  ],
  "d890c432b741460e2bc7": [
@@ -8052,6 +8472,13 @@
     "sentiment": "긍정",
     "topic": "착용감",
     "has_request": false
+   }
+  },
+  {
+   "parsed": {
+    "sentiment": "긍정",
+    "topic": "기타",
+    "has_request": true
    }
   }
  ],
@@ -8103,27 +8530,16 @@
     "topic": "가격",
     "has_request": false
    }
+  },
+  {
+   "parsed": {
+    "sentiment": "긍정",
+    "topic": "기타",
+    "has_request": false
+   }
   }
  ],
  "f8add8af40bba57f7409": [
-  {
-   "choices": [
-    {
-     "message": {
-      "content": "이 사진에는 다양한 채소와 향신료, 곡물 등이 배열되어 있습니다.",
-      "tool_calls": null
-     }
-    }
-   ],
-   "usage": {
-    "total_tokens": 14208,
-    "prompt_tokens": 14189,
-    "completion_tokens": 19,
-    "completion_tokens_details": {
-     "reasoning_tokens": 0
-    }
-   }
-  },
   {
    "choices": [
     {
@@ -8159,27 +8575,27 @@
      "reasoning_tokens": 0
     }
    }
-  }
- ],
- "2c4fdaf4d52c9f5acdd8": [
+  },
   {
    "choices": [
     {
      "message": {
-      "content": "흰색 컵에 담긴 블랙 커피와 그 옆에 놓인 작은 숟가리가 있는 사진입니다.",
+      "content": "사진에는 다양한 채소와 향신료가 배열되어 있는 모습이 있습니다.",
       "tool_calls": null
      }
     }
    ],
    "usage": {
-    "total_tokens": 25551,
-    "prompt_tokens": 25523,
-    "completion_tokens": 28,
+    "total_tokens": 14206,
+    "prompt_tokens": 14189,
+    "completion_tokens": 17,
     "completion_tokens_details": {
      "reasoning_tokens": 0
     }
    }
-  },
+  }
+ ],
+ "2c4fdaf4d52c9f5acdd8": [
   {
    "choices": [
     {
@@ -8215,27 +8631,27 @@
      "reasoning_tokens": 0
     }
    }
-  }
- ],
- "efd84340eb5796822b4e": [
+  },
   {
    "choices": [
     {
      "message": {
-      "content": "이 이미지는 숙취 해소 음료 '컨디션'을 광고하고 있습니다.",
+      "content": "흰색 컵에 담긴 검은 커피와 그 옆에 자리 잡고 있는 작은 숟가락이 보이는 장면입니다.",
       "tool_calls": null
      }
     }
    ],
    "usage": {
-    "total_tokens": 25542,
+    "total_tokens": 25556,
     "prompt_tokens": 25523,
-    "completion_tokens": 19,
+    "completion_tokens": 33,
     "completion_tokens_details": {
      "reasoning_tokens": 0
     }
    }
-  },
+  }
+ ],
+ "efd84340eb5796822b4e": [
   {
    "choices": [
     {
@@ -8271,27 +8687,27 @@
      "reasoning_tokens": 0
     }
    }
-  }
- ],
- "d694369e0f3c175bf843": [
+  },
   {
    "choices": [
     {
      "message": {
-      "content": "첫 번째 이미지는 제품 광고로, 즐거운 분위기에서 술자리와 함께 하는 상쾌함을 강조하고 있으며, 두 번째 이미지는 귀여운 동물들이 서로를 바라보는 모습으로, 따뜻하고 평화로운 정서를 전달합니다.",
+      "content": "이 이미지는 \"컨디션\" 음료의 광고입니다.",
       "tool_calls": null
      }
     }
    ],
    "usage": {
-    "total_tokens": 39756,
-    "prompt_tokens": 39697,
-    "completion_tokens": 59,
+    "total_tokens": 25537,
+    "prompt_tokens": 25523,
+    "completion_tokens": 14,
     "completion_tokens_details": {
      "reasoning_tokens": 0
     }
    }
-  },
+  }
+ ],
+ "d694369e0f3c175bf843": [
   {
    "choices": [
     {
@@ -8323,6 +8739,24 @@
     "total_tokens": 39782,
     "prompt_tokens": 39697,
     "completion_tokens": 85,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  },
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "첫 번째 이미지는 제품 광고로서 즐거움과 활력을 강조하며 소비를 유도하는 분위기를 전달하고, 두 번째 이미지는 개와 고양이의 귀여운 순간을 담아내어 친근함과 따뜻함을 느끼게 하는 분위기를 제공합니다.",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 39758,
+    "prompt_tokens": 39697,
+    "completion_tokens": 61,
     "completion_tokens_details": {
      "reasoning_tokens": 0
     }
@@ -8622,6 +9056,13 @@
     "urgency": "보통",
     "order_number": null
    }
+  },
+  {
+   "parsed": {
+    "category": "배송",
+    "urgency": "높음",
+    "order_number": null
+   }
   }
  ],
  "5c06a6efa77b126ca10e": [
@@ -8649,6 +9090,13 @@
     "urgency": "보통",
     "order_number": null
    }
+  },
+  {
+   "parsed": {
+    "category": "배송",
+    "urgency": "보통",
+    "order_number": null
+   }
   }
  ],
  "ce20c368b3ef80c7e497": [
@@ -8670,6 +9118,29 @@
       "original": "gang@example.com",
       "pii_type": "이메일",
       "masked": "*******@example.com"
+     }
+    ],
+    "risk": "보통"
+   }
+  },
+  {
+   "parsed": {
+    "masked_text": "주문자 강감찬입니다. ***-****-3333 으로 연락 주시고 ***@***.com 으로 영수증 보내주세요.",
+    "items": [
+     {
+      "original": "강감찬",
+      "pii_type": "이름",
+      "masked": "***"
+     },
+     {
+      "original": "010-2222-3333",
+      "pii_type": "전화번호",
+      "masked": "***-****-3333"
+     },
+     {
+      "original": "gang@example.com",
+      "pii_type": "이메일",
+      "masked": "***@***.com"
      }
     ],
     "risk": "보통"
@@ -8934,12 +9405,45 @@
      }
     ]
    }
+  },
+  {
+   "parsed": {
+    "store_name": null,
+    "total_amount": 28000.0,
+    "payment": "현금",
+    "items": [
+     {
+      "name": "JASMINE MT ( L )",
+      "quantity": 1,
+      "price": 24000.0
+     },
+     {
+      "name": "COCONUT JELLY ( L )",
+      "quantity": 1,
+      "price": 4000.0
+     }
+    ]
+   }
   }
  ],
  "b6a1246398b33053df1c": [
   {
    "parsed": {
     "store_name": "Dynamic",
+    "total_amount": 11000.0,
+    "payment": "현금",
+    "items": [
+     {
+      "name": "DONAT GULA",
+      "quantity": 1,
+      "price": 11000.0
+     }
+    ]
+   }
+  },
+  {
+   "parsed": {
+    "store_name": "Dynamic Bakery & Cafe",
     "total_amount": 11000.0,
     "payment": "현금",
     "items": [
@@ -8976,6 +9480,30 @@
      }
     ]
    }
+  },
+  {
+   "parsed": {
+    "store_name": null,
+    "total_amount": 174600.0,
+    "payment": "현금",
+    "items": [
+     {
+      "name": "ICE BLACKCOFFE",
+      "quantity": 2,
+      "price": 82000.0
+     },
+     {
+      "name": "AVOCADO COFFEE",
+      "quantity": 1,
+      "price": 67000.0
+     },
+     {
+      "name": "CHICKEN KATSUP",
+      "quantity": 1,
+      "price": 51000.0
+     }
+    ]
+   }
   }
  ],
  "2520e12a61f9656851ac": [
@@ -8989,6 +9517,20 @@
       "name": "PB-1",
       "quantity": 1,
       "price": 31000.0
+     }
+    ]
+   }
+  },
+  {
+   "parsed": {
+    "store_name": "TRAD KY TOAST CARTE",
+    "total_amount": 31000.0,
+    "payment": "현금",
+    "items": [
+     {
+      "name": "PB-1",
+      "quantity": 1,
+      "price": 28000.0
      }
     ]
    }
@@ -9064,6 +9606,468 @@
       "price": 11000.0
      }
     ]
+   }
+  }
+ ],
+ "145cfdcac3441515cf8b": [
+  {
+   "parsed": {
+    "category": "환불",
+    "urgency": "긴급",
+    "emotion": "부정",
+    "key_issues": [
+     "환불 절차 문의",
+     "배송비 차감 여부",
+     "주문번호 확인"
+    ],
+    "order_number": "ORDER-230415",
+    "suggested_response": "주문번호 ORDER-230415에 대한 환불 절차를 안내드립니다. 환불 요청 시 배송비가 차감되는지 여부는 저희 고객센터로 문의하시면 자세히 안내해 드리겠습니다."
+   }
+  },
+  {
+   "parsed": {
+    "category": "환불",
+    "urgency": "긴급",
+    "emotion": "부정",
+    "key_issues": [
+     "환불 요청 방법 안내",
+     "배송비 차감 여부",
+     "환불 처리 소요 시간"
+    ],
+    "order_number": "ORDER-230415",
+    "suggested_response": "환불 요청은 고객센터를 통해 가능합니다. 배송비는 환불 금액에서 차감될 수 있습니다. 더 궁금한 점이 있으시면 고객센터로 문의해주세요!"
+   }
+  }
+ ],
+ "6a7ea4bc72eda229cad2": [
+  {
+   "parsed": {
+    "category": "배송",
+    "urgency": "긴급",
+    "emotion": "부정",
+    "key_issues": [
+     "배송 지연",
+     "배송 추적 불가",
+     "빠른 답변 요청"
+    ],
+    "order_number": null,
+    "suggested_response": "현재 배송 상황을 확인하고 있습니다. 최대한 빠른 시일 내에 정확한 정보를 전달드리겠습니다."
+   }
+  }
+ ],
+ "1233aaeb16801b926d0f": [
+  {
+   "parsed": {
+    "category": "교환",
+    "urgency": "보통",
+    "emotion": "부정",
+    "key_issues": [
+     "상품 불량",
+     "포장 손상",
+     "스크래치 있는 제품 교환 요청"
+    ],
+    "order_number": null,
+    "suggested_response": "죄송합니다. 상품에 불량이 있어 교환이 가능합니다. 교환 절차를 안내해 드리겠습니다."
+   }
+  }
+ ],
+ "451e78160a00e1164e1f": [
+  {
+   "parsed": {
+    "category": "기술지원",
+    "urgency": "긴급",
+    "emotion": "부정",
+    "key_issues": [
+     "로그인 문제",
+     "비밀번호 재설정 요청",
+     "이메일 미수신"
+    ],
+    "order_number": null,
+    "suggested_response": "비밀번호 재설정 이메일이 수신되지 않는 문제를 해결하기 위해, 스팸 메일함을 확인해 보시고, 필요한 경우 고객센터로 문의하시기 바랍니다."
+   }
+  }
+ ],
+ "a5addb8112df4935a174": [
+  {
+   "parsed": {
+    "category": "기타",
+    "urgency": "보통",
+    "emotion": "긍정",
+    "key_issues": [
+     "빠른 배송에 대한 감사",
+     "생일 선물 수령",
+     "포장 품질"
+    ],
+    "order_number": null,
+    "suggested_response": "고객님, 소중한 후기 감사합니다! 앞으로도 좋은 서비스로 보답하겠습니다."
+   }
+  }
+ ],
+ "836559a373a429d0126c": [
+  {
+   "parsed": {
+    "category": "교환",
+    "urgency": "보통",
+    "emotion": "중립",
+    "key_issues": [
+     "주문번호 확인",
+     "색상 변경 요청",
+     "교환 절차 안내"
+    ],
+    "order_number": "ORDER-230512",
+    "suggested_response": "주문번호 ORDER-230512의 노트북 파우치 색상 변경은 가능합니다. 교환 절차를 안내해드리겠습니다."
+   }
+  }
+ ],
+ "035eb055958290bcb989": [
+  {
+   "parsed": {
+    "category": "교환",
+    "urgency": "보통",
+    "emotion": "중립",
+    "key_issues": [
+     "신발 사이즈 교환 요청",
+     "교환 절차 안내 요청"
+    ],
+    "order_number": null,
+    "suggested_response": "신발 사이즈 교환을 원하실 경우, 제품을 수령하신 날로부터 7일 이내에 고객센터에 문의해주셔야 합니다. 교환 절차는 먼저 고객센터에 전화하시거나 이메일로 연락하시고, 반품을 위한 배송 방법을 안내받으시면 됩니다. 반품이 완료된 후, 요청하신 사이즈로 재발송해드립니다."
+   }
+  }
+ ],
+ "eed553fc10b1218d00f0": [
+  {
+   "parsed": {
+    "age": 25,
+    "gender": "남성",
+    "job": "회사원",
+    "income": 3000,
+    "region": "서울",
+    "standardized": {
+     "age_group": "20대",
+     "job_category": "회사원",
+     "income_range": "3000만원 미만"
+    },
+    "quality": "우수"
+   }
+  }
+ ],
+ "421fef23a79685ce0be6": [
+  {
+   "parsed": {
+    "age": 25,
+    "gender": "여성",
+    "job": "개발자",
+    "income": 3500,
+    "region": "경기도",
+    "standardized": {
+     "age_group": "20대",
+     "job_category": "IT·개발",
+     "income_range": "3000-5000만원"
+    },
+    "quality": "우수"
+   }
+  }
+ ],
+ "15d64b8c8103790eef2f": [
+  {
+   "parsed": {
+    "age": 30,
+    "gender": "남성",
+    "job": "teacher",
+    "income": 2800,
+    "region": "부산",
+    "standardized": {
+     "age_group": "30대",
+     "job_category": "교육",
+     "income_range": "2000-3000만원"
+    },
+    "quality": "우수"
+   }
+  }
+ ],
+ "6e85fda3fc8d1f7901a4": [
+  {
+   "parsed": {
+    "age": null,
+    "gender": "불명",
+    "job": "프리랜서",
+    "income": null,
+    "region": "서울",
+    "standardized": {
+     "age_group": null,
+     "job_category": "프리랜서",
+     "income_range": null
+    },
+    "quality": "우수"
+   }
+  }
+ ],
+ "27d04af3595e318c4267": [
+  {
+   "parsed": {
+    "age": null,
+    "gender": "남성",
+    "job": "자영업",
+    "income": 5000,
+    "region": "충청도",
+    "standardized": {
+     "age_group": "40대",
+     "job_category": "자영업",
+     "income_range": "5000만원 이상"
+    },
+    "quality": "우수"
+   }
+  }
+ ],
+ "2399bc0cb93190aaea5c": [
+  {
+   "parsed": {
+    "age": null,
+    "gender": "남성",
+    "job": null,
+    "income": null,
+    "region": "서울",
+    "standardized": {
+     "age_group": null,
+     "job_category": null,
+     "income_range": null
+    },
+    "quality": "양호"
+   }
+  }
+ ],
+ "9d69fedb7773eb498829": [
+  {
+   "parsed": {
+    "gender": "남성",
+    "style": "스포티",
+    "items": [
+     {
+      "item_type": "상의",
+      "color": "블랙",
+      "pattern": "무지"
+     },
+     {
+      "item_type": "하의",
+      "color": "네이비",
+      "pattern": "무지"
+     },
+     {
+      "item_type": "신발",
+      "color": "블랙",
+      "pattern": "무지"
+     },
+     {
+      "item_type": "액세서리",
+      "color": "블랙",
+      "pattern": "무지"
+     }
+    ]
+   }
+  }
+ ],
+ "6f2817369530d39e9395": [
+  {
+   "parsed": {
+    "gender": "남성",
+    "style": "캐주얼",
+    "items": [
+     {
+      "item_type": "하의",
+      "color": "레드",
+      "pattern": "무지"
+     },
+     {
+      "item_type": "상의",
+      "color": "화이트",
+      "pattern": "무지"
+     },
+     {
+      "item_type": "신발",
+      "color": "화이트",
+      "pattern": "무지"
+     }
+    ]
+   }
+  }
+ ],
+ "649f030a5895aa0ac23e": [
+  {
+   "parsed": {
+    "gender": "남성",
+    "style": "캐주얼",
+    "items": [
+     {
+      "item_type": "하의",
+      "color": "화이트",
+      "pattern": "무지"
+     },
+     {
+      "item_type": "상의",
+      "color": "블랙",
+      "pattern": "프린트"
+     }
+    ]
+   }
+  }
+ ],
+ "0c6b5538b408744c457e": [
+  {
+   "parsed": {
+    "gender": "남성",
+    "style": "스포티",
+    "items": [
+     {
+      "item_type": "하의",
+      "color": "블랙",
+      "pattern": "무지"
+     },
+     {
+      "item_type": "상의",
+      "color": "화이트",
+      "pattern": "프린트"
+     }
+    ]
+   }
+  }
+ ],
+ "5b76d0f56427ac8f3f1b": [
+  {
+   "parsed": {
+    "gender": "남성",
+    "style": "캐주얼",
+    "items": [
+     {
+      "item_type": "하의",
+      "color": "네이비",
+      "pattern": "기타"
+     },
+     {
+      "item_type": "상의",
+      "color": "옐로우",
+      "pattern": "기타"
+     },
+     {
+      "item_type": "상의",
+      "color": "그레이",
+      "pattern": "기타"
+     }
+    ]
+   }
+  }
+ ],
+ "53187cd5d33c7472ed18": [
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "선크림을 고를 때 가장 중요한 것은 **SPF**라는 숫자야. 이 숫자가 크면 클수록 햇빛으로부터 피부를 더 잘 보호해 준단다. 그래서 외출할 때는 SPF가 높은 선크림을 사용하는 게 좋아! 햇빛에서 더 오랫동안 안전하게 놀 수 있게 도와줘.",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 188,
+    "prompt_tokens": 112,
+    "completion_tokens": 76,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  }
+ ],
+ "6337b05f07b60bb790da": [
+  {
+   "parsed": {
+    "gender": "남성",
+    "style": "스포티",
+    "items": [
+     {
+      "item_type": "상의",
+      "color": "블랙",
+      "pattern": "스트라이프"
+     },
+     {
+      "item_type": "하의",
+      "color": "블루",
+      "pattern": "스트라이프"
+     },
+     {
+      "item_type": "신발",
+      "color": "블랙",
+      "pattern": "무지"
+     },
+     {
+      "item_type": "액세서리",
+      "color": "블랙",
+      "pattern": "무지"
+     }
+    ]
+   }
+  }
+ ],
+ "a008feca67a6d560c174": [
+  {
+   "parsed": {
+    "gender": "남성",
+    "style": "스포티",
+    "items": [
+     {
+      "item_type": "상의",
+      "color": "화이트",
+      "pattern": "무지"
+     },
+     {
+      "item_type": "하의",
+      "color": "레드",
+      "pattern": "무지"
+     },
+     {
+      "item_type": "신발",
+      "color": "화이트",
+      "pattern": "무지"
+     }
+    ]
+   }
+  }
+ ],
+ "13ab19c310d1349d83ea": [
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "물론이지! 리스트를 거꾸로 만드는 방법을 아주 쉽게 설명해볼게.\n\n### 리스트란?\n리스트는 여러 개의 값을 한 곳에 모아 놓은 상자라고 생각하면 돼. 예를 들어, 숫자들이 들어있는 상자가 있다고 할게.\n\n```python\n내_상자 = [1, 2, 3, 4, 5]\n```\n\n이 상자에는 1, 2, 3, 4, 5라는 숫자가 들어있어.\n\n### 리스트를 거꾸로 만들기\n이제 이 상자 안에 있는 숫자를 거꾸로 놓고 싶어!\n\n#### 방법 1: `reverse()` 사용하기\n이 방법은 상자 안의 숫자를 직접 거꾸로 뒤집는 거야. 아래 코드를 보면:\n\n```python\n내_상자.reverse()\nprint(내_상자)  # 거꾸로 뒤집은 상자를 보여줘\n```\n\n이렇게 하면 상자의 내용이 [5, 4, 3, 2, 1]로 바뀌어!\n\n#### 방법 2: 슬라이스 이용하기\n이 방법은 새로운 상자를 만들면서 숫자를 거꾸로 가져오는 거야:\n\n```python\n거꾸로_상자 = 내_상자[::-1]\nprint(거꾸로_상자)  # 새로운 거꾸로 상자를 보여줘\n```\n\n이렇게 하면 새로운 상자에 [5, 4, 3, 2, 1]이 들어가!\n\n### 정리\n- `reverse()`는 원래 상자를 직접 뒤집어.\n- `[::-1]`은 새로운 상자를 만들어서 숫자를 거꾸로 가져오는 방법이야.\n\n이제 너도 리스트를 거꾸로 만드는 방법을 알겠지?",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 606,
+    "prompt_tokens": 224,
+    "completion_tokens": 382,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  }
+ ],
+ "f72cb8b78b8e7128fa7b": [
+  {
+   "choices": [
+    {
+     "message": {
+      "content": "파이썬은 웹 개발, 데이터 분석, 인공지능 등 다양한 분야에서 사용될 수 있는 강력한 프로그래밍 언어입니다. 간결하고 가독성이 높은 문법 덕분에 초보자도 쉽게 배울 수 있으며, 방대한 라이브러리와 프레임워크를 통해 복잡한 작업을 간편하게 수행할 수 있습니다. 이러한 특성 덕분에 파이썬은 연구, 산업, 교육 등 여러 분야에서 인기를 끌고 있습니다.",
+      "tool_calls": null
+     }
+    }
+   ],
+   "usage": {
+    "total_tokens": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
    }
   }
  ]
