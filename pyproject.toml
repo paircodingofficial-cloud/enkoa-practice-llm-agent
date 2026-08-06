@@ -17,4 +17,8 @@ dependencies = [
     "sentence-transformers>=3.0",
     "chromadb>=1.0",
     "qdrant-client>=1.12",
+    # day16 — 문서 파싱·RAG 파이프라인
+    "pymupdf4llm>=1.28.0",
+    "pymupdf>=1.28.0",
+    "requests>=2.32",
 ]
