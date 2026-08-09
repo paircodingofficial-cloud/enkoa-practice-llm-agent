@@ -21,4 +21,6 @@ dependencies = [
     "pymupdf4llm>=1.28.0",
     "pymupdf>=1.28.0",
     "requests>=2.32",
+    # day17 — 데이터베이스·SQL (Supabase·pgvector)
+    "supabase>=2.15",
 ]

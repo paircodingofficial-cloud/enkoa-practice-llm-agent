@@ -9,6 +9,8 @@
 |---|---|---|
 | **day14** | OpenAI API 활용 | 답변 생성 원리·Chat/Responses API·파라미터·사고모드·스트리밍, 프롬프트 엔지니어링·Function Calling·구조화된 출력, 텍스트 정형화(문의 분류·개인정보 마스킹·설문 표준화), 이미지 이해·정형화(패션·영수증 OCR) |
 | **day15** | RAG·벡터 검색 | RAG 아키텍처(질문→검색기→생성기)·환각과 최신성·인덱싱 타임 vs 쿼리 타임, 직접 만드는 코사인 Top-K 검색기와 선형 스캔의 한계, ChromaDB 구축·적재·Top-K 검색·메타데이터 필터(`$in`·`$and`·범위·`where_document`), 근사 최근접 탐색(ANN)·HNSW, Qdrant 로 재현·솔루션 비교, **검색 결과를 근거로 LLM 이 답을 쓰게 해 RAG 완성** |
+| **day16** | RAG 파이프라인 | 텍스트 청킹 전략, 문서 로딩→임베딩→벡터 검색→생성 통합, 검색 근거로 답을 쓰게 하는 마지막 단계 완성, 기초 검색 품질 지표(Hit@K·Precision@K·Recall@K·MRR)로 파이프라인 점검 |
+| **day17** | 데이터베이스·SQL | **sqlite** 로 배우는 관계형 DB — 데이터 타입·제약조건·PK/FK·1:1·1:N·M:N·ERD(까마귀발) 설계, `INSERT`·파라미터 바인딩(`executemany`)·`ALTER TABLE`, 조회/정렬/집계·`GROUP BY`·`HAVING`·적는 순서 vs 실행 순서, 트랜잭션(`BEGIN`·`COMMIT`·`ROLLBACK`)·`JOIN`/`LEFT JOIN`·인덱스·서브쿼리(상관 서브쿼리 포함), 그리고 **Supabase(PostgreSQL)+pgvector** 로 옮겨 가 임베딩 적재·HNSW 인덱스·`rpc` 로 의미 검색·분류 조건과 겹친 결합 검색까지 |
 
 ---
 
@@ -53,9 +55,23 @@ cp .env.example .env      # 그리고 .env 를 열어 OPENAI_API_KEY 를 채웁�
 
 준비 셀을 실행해 **`키 확인됨`** 이 뜨면 준비가 끝난 것입니다. 이후 셀은 실제 호출이라 요금이 부과됩니다.
 
-> **어디에 필요한가** — day14 는 전부, day15 는 **생성 부분만**입니다(교안_03 · 과제 LV2 11번 · LV3 4번).
+> **어디에 필요한가** — day14·day16 은 전부, day15 는 **생성 부분만**입니다(교안_03 · 과제 LV2 11번 · LV3 4번).
 > day15 의 검색 부분(교안_01·02 와 나머지 과제)은 임베딩 모델을 내려받아 로컬에서 돌리고 벡터 DB 도
 > 메모리 모드라 **키 없이 그대로 풀립니다.**
+> day17 은 **과제 LV3 의 답변 생성에서만** 이 키를 씁니다.
+
+### 3. day17 만 — Supabase 프로젝트 (교안_03 · 과제 LV3)
+
+day17 의 앞부분(교안_01·02, 과제 LV1·LV2)은 **sqlite** 라 가입도 설치도 필요 없습니다.
+벡터를 다루는 뒷부분만 **Supabase(PostgreSQL)+pgvector** 를 씁니다.
+
+1. [supabase.com](https://supabase.com) 가입 → **New project** (Region `ap-northeast-2 (Seoul)`)
+2. **Project Settings → API** 에서 **Project URL** 과 **anon public key** 복사
+3. `day17_데이터베이스_SQL/.env` 에 `SUPABASE_URL`·`SUPABASE_ANON_KEY` 를 채웁니다
+4. **SQL Editor** 에서 준비 SQL 실행 — 교안_03 은 `data/setup_supabase.sql`, 과제 LV3 은 `data/setup_travel.sql`
+   (**서로 다른 파일**이고, 같은 프로젝트에 표만 새로 만듭니다)
+
+자세한 순서는 `day17_데이터베이스_SQL/실습_가이드.md` 의 **0. 준비** 를 따라가세요.
 
 > 🔐 **`.env` 는 절대 커밋하지 마세요.** `.gitignore` 에 이미 들어 있습니다.
 > 키가 새어 나가면 즉시 발급처에서 폐기(rotate)하세요.
@@ -85,6 +101,8 @@ cp .env.example .env      # 그리고 .env 를 열어 OPENAI_API_KEY 를 채웁�
 ```
 day14_OpenAI_API_활용/     OpenAI API 활용
 day15_RAG_벡터검색/        RAG·벡터 검색
+day16_RAG_파이프라인/      RAG 파이프라인
+day17_데이터베이스_SQL/    데이터베이스·SQL (sqlite → Supabase·pgvector)
 ```
 
 각 일차 폴더 안에 교안·과제 노트북과 `data/`·`images/`·`실습_가이드.md` 가 들어 있습니다.

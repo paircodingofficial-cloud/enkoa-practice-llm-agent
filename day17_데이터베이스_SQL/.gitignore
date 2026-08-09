@@ -1,0 +1,17 @@
+# 가상환경·캐시
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# 에이전트 작업 상태
+.omc/
+
+# 실행 산출물
+output/
+
+# 접속 정보·키 (루트 .gitignore 도 덮지만, 폴더가 따로 복사·이동될 때를 대비해 여기에도 둔다)
+.env
+
+# macOS
+.DS_Store
