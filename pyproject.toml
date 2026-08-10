@@ -23,4 +23,9 @@ dependencies = [
     "requests>=2.32",
     # day17 — 데이터베이스·SQL (Supabase·pgvector)
     "supabase>=2.15",
+    # day18 — LangChain 기본 구조(모델·프롬프트·파서·LCEL·Runnable·Memory)
+    #   장기 기억 절은 day15 의 chromadb·sentence-transformers 를 그대로 재사용한다.
+    "langchain>=1.0",
+    "langchain-openai>=1.0",
+    "pyyaml>=6.0",
 ]
