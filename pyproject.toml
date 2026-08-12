@@ -33,4 +33,14 @@ dependencies = [
     "langchain-chroma>=0.2",
     "langchain-huggingface>=0.3",
     "langchain-text-splitters>=1.0",
+    # day20 — ReAct·멀티툴 에이전트 + RAG 검색 평가
+    #   교안_02 가 Precision@K·Recall@K 를 RAGAS 의 ID 기반 지표로 낸다
+    #   (IDBasedContextPrecision·IDBasedContextRecall — 조각 id 만 대조해 모델·임베딩을 안 쓴다).
+    #   ⚠️ 상한 <1.0 은 필수다. 그 둘은 `ragas.metrics` 경로에만 있고 v1.0 에서 제거 예정이며,
+    #     현재 `ragas.metrics.collections` 에는 ID 기반 두 지표가 없다(0.4.3 실측).
+    #   langchain-community 는 ragas 가 끌어온다(교안의 자리표시자 심이 그 경로를 메운다).
+    "ragas>=0.4,<1.0",
+    # 노트북이 직접 import 하는 것은 명시한다 — 지금은 langchain 이 함께 끌어오지만
+    #   그쪽 의존성이 바뀌면 조용히 사라진다.
+    "langchain-core>=1.0",
 ]
