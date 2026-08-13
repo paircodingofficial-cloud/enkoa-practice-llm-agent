@@ -14,6 +14,7 @@
 | **day18** | LangChain 기본 구조 | 부품 표준화(`ChatOpenAI`)·메시지(`SystemMessage`/`HumanMessage`)와 **이미지 입력**, 프롬프트 템플릿과 **프롬프트를 YAML 파일로 관리**, 출력 파서, **LCEL 체인**(`프롬프트 \| 모델 \| 파서`)·`invoke`/`batch`/`stream`, 작은 체인을 이어 큰 체인 만들기(다리 부품), `RunnableLambda`·`RunnableParallel`·`RunnablePassthrough`, **대화 기록(단기 기억)** 과 트리밍, **장기 기억**(벡터 저장소 저장·회상)과 무엇을 기억할지 모델이 판단하기, `while` 멀티턴 상담 워크플로우 |
 | **day19** | LangChain 에이전트·도구 | 구조화된 출력(`with_structured_output`)으로 정형화를 한 줄로, **`@tool` 도구 정의**(docstring=명세·타입힌트=인자·모델에 넘어가는 JSON 명세), `create_agent` 와 **메시지 궤적**(사람→AI 도구호출→도구결과→AI 답)·`system_prompt`·`response_format`, 도구를 만들 때 지킬 것(**실패도 문자열로**·권한은 좁게)과 실무형 도구 3종(사내 조회·규칙 계산·외부 REST API), **RAG 를 LangChain 부품으로 재조립**(`Document`·`RecursiveCharacterTextSplitter`·`HuggingFaceEmbeddings`·`Chroma`·`as_retriever`)과 LCEL RAG 체인·근거 함께 반환(`RunnableParallel`), **Text-to-SQL**(스키마 설명이 모델의 눈·두 겹 가드=문자열 검사+읽기 전용 연결·구조화 출력으로 SQL+근거) |
 | **day20** | ReAct·멀티툴 에이전트 | **ReAct 세 박자**(생각·행동·관찰)와 기록의 대응(AIMessage=생각+행동 / ToolMessage=관찰)·`agent.stream`, 답이 있는 곳이 서로 다른 도구 셋을 한 창구로 — **문서를 도구로**(조각 꼬리표의 번호로 **앞뒤 조각까지 이어 붙여** 문맥 복원·근거 제한·쪽 번호 출처 표기)·**표를 도구로**(Text-to-SQL·두 겹 가드)·**외부 REST API**(실패도 문자열로), `if` 없이 **설명으로 라우팅**·동시 호출·다단계 연쇄, 도구 선택이 어긋날 때의 **4증상**(안 부름·잘못 고름·조용한 실패·과다 호출) 진단과 처방, 저장소를 Supabase(pgvector)로 교체. 그리고 **만들었으면 잰다** — 평가셋 3요소·라벨은 **조각**에·`Hit@K`·`Precision@K`·`Recall@K`·`MRR` 손구현과 읽는 법·K 트레이드오프·**재고 나서 고칠 자리 찾기**, 마지막으로 **평가셋을 직접 만들기**(라벨링 4단계·전체 재라벨링·점검 7항목) |
+| **day21** | MCP·계획 실행 자동화 | **MCP**(우리가 만들지 않은 도구를 규격으로 붙인다). 서버 설정 한 딕셔너리(`command`·`args`·`transport`)로 파일시스템·웹검색·브라우저·DB·코드 실행을 에이전트에 쥐여 주기, 도구 명세 읽기·직접 호출·**비동기 전용**(`ainvoke`), 권한은 말이 아니라 **넘기는 도구 목록**으로, 여러 서버를 한 클라이언트에(`tool_name_prefix` 로 이름 충돌 차단), 원격 HTTP 서버(Context7)로 **최신 문서 조회**. 그리고 **미들웨어**로 에이전트 루프를 확장한다. 여섯 메서드와 `before_`/`after_` 대 `wrap_` 의 차이, `TodoListMiddleware` 로 **Plan-and-Execute**(계획을 문서로 남기고 단계별 실행), `ModelCallLimitMiddleware` 로 반복 호출 상한, **프롬프트 한 문단이 도구 선택을 바꾸는 것**을 A/B 로 확인, 결과 정형화로 표·JSON 적재 |
 
 ---
 
@@ -67,6 +68,8 @@ cp .env.example .env      # 그리고 .env 를 열어 OPENAI_API_KEY 를 채웁�
 
 > **day19·day20 은 전부 실호출입니다.** 에이전트가 루프를 돌며 모델을 여러 번 부릅니다. day20 은 도구 하나가 **공휴일 REST API** 를 부르므로 인터넷 연결도 필요하고(키는 불필요), 과제 LV2 9번만 **SQL 단원에서 만든 Supabase 접속 정보**를 씁니다 — 없으면 그 문제만 건너뜁니다.
 > 검색 평가 교안(day20 교안_02)은 **모델을 한 번도 부르지 않습니다** — 임베딩과 검색만 씁니다.
+>
+> **day21 은 MCP 서버를 그때그때 띄웁니다.** `npx`(Node.js)와 `uvx`(uv)가 필요하고, 첫 실행은 서버 패키지를 받느라 느립니다. 브라우저 실습(03)만 크로미움 설치가 한 번 필요합니다 (`npx playwright install chromium`). 원격 문서 조회(Context7)는 인터넷만 있으면 되고 키는 없습니다.
 
 ### 3. day17 만 — Supabase 프로젝트 (교안_03 · 과제 LV3)
 
@@ -114,6 +117,7 @@ day17_데이터베이스_SQL/    데이터베이스·SQL (sqlite → Supabase·p
 day18_LangChain_기본구조/  LangChain 기본 구조 (모델·프롬프트·파서·LCEL·Runnable·Memory)
 day19_LangChain_에이전트_툴/  LangChain 에이전트·도구 (구조화 출력·@tool·create_agent·RAG 체인·Text-to-SQL)
 day20_ReAct_멀티툴_에이전트/  ReAct·멀티툴 에이전트 (도구 셋 라우팅·검색 평가·평가셋 구축)
+day21_Agent_데이터분석_자동화/  MCP 클라이언트·계획 실행 자동화 (서버 다섯 종·미들웨어·Plan-and-Execute)
 ```
 
 각 일차 폴더 안에 교안·과제 노트북과 `data/`·`images/`·`실습_가이드.md` 가 들어 있습니다.
