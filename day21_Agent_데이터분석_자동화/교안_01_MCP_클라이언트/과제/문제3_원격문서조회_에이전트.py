@@ -15,6 +15,7 @@ from langchain.agents import create_agent
 from langchain.agents.middleware import ModelCallLimitMiddleware
 from langchain_core.messages import AIMessage
 from langchain_mcp_adapters.client import MultiServerMCPClient
+from langchain_mcp_adapters.tools import load_mcp_tools   # 열어 둔 세션에서 도구를 꺼낸다
 from langchain_openai import ChatOpenAI
 
 from 공통 import DAY_DIR, load_api_key
@@ -33,7 +34,10 @@ async def main():
     #   - Context7 은 교안에서 다루지 않았습니다. 연결 설정을 직접 만듭니다.
     #     주소는 "https://mcp.context7.com/mcp" 이고 전송 방식은 "streamable_http" 입니다.
     #     원격 서버라 command·args 가 없고 url 을 씁니다(교안 개념 5절).
-    #   - 만든 설정을 변수 `context7` 에 담고, 도구 목록을 받아 변수 `docs_tools` 에 담으세요.
+    #   - 만든 설정을 변수 `context7` 에 담고(채점이 블록 밖에서 이 값을 보므로 블록 밖에서 만드세요),
+    #     MultiServerMCPClient 에 {"docs": context7} 을 넘겨 클라이언트를 만드세요.
+    #   - `async with client.session("docs") as session:` 안에서 `await load_mcp_tools(session)` 으로
+    #     도구를 받아 변수 `docs_tools` 에 담으세요. 에이전트 ainvoke 도 이 블록 안에서 합니다.
     #   - 그 도구를 create_agent 에 넘겨 에이전트를 만드세요.
     #     모델은 ChatOpenAI(model="gpt-4o-mini", temperature=0, timeout=60) 입니다.
     #   - 시스템 프롬프트에 이 둘을 적으세요.

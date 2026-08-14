@@ -15,6 +15,7 @@ from langchain.agents import create_agent
 from langchain.agents.middleware import ModelCallLimitMiddleware
 from langchain_core.messages import AIMessage
 from langchain_mcp_adapters.client import MultiServerMCPClient
+from langchain_mcp_adapters.tools import load_mcp_tools   # 열어 둔 세션에서 도구를 꺼낸다
 from langchain_openai import ChatOpenAI
 
 from 공통 import CODE_RUNNER, DAY_DIR, load_api_key
@@ -27,7 +28,10 @@ Q2 = "1 부터 100 까지 더하면 얼마인지 알려 줘. 암산하지 말고
 
 async def main():
     # 문제 2. 코드 실행 서버를 에이전트에 붙여 스스로 계산하게 하기
-    #   - CODE_RUNNER 로 도구 목록을 받아 변수 `code_tools` 에 담으세요.
+    #   - MultiServerMCPClient 에 {"code": CODE_RUNNER} 를 넘겨 클라이언트를 만들고,
+    #     `async with client.session("code") as session:` 안에서 `await load_mcp_tools(session)` 으로
+    #     도구를 받아 변수 `code_tools` 에 담으세요.
+    #     에이전트가 도구를 부르는 동안 서버가 살아 있어야 하니 ainvoke 까지 이 블록 안에서 합니다.
     #   - 그 도구를 create_agent 에 넘겨 에이전트를 만드세요.
     #     모델은 ChatOpenAI(model="gpt-4o-mini", temperature=0, timeout=60) 입니다.
     #   - 시스템 프롬프트에 이 둘을 적으세요.

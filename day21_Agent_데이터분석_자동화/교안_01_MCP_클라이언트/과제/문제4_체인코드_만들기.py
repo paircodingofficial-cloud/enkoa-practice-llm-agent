@@ -10,11 +10,13 @@ MCP 도구는 비동기 전용이라 `await 도구.ainvoke({...})` 로 부릅니
 """
 
 import asyncio
+from contextlib import AsyncExitStack   # 세션 여럿을 한 블록에 쌓아 두고 한꺼번에 닫는다
 
 from langchain.agents import create_agent
 from langchain.agents.middleware import ModelCallLimitMiddleware
 from langchain_core.messages import AIMessage
 from langchain_mcp_adapters.client import MultiServerMCPClient
+from langchain_mcp_adapters.tools import load_mcp_tools   # 열어 둔 세션에서 도구를 꺼낸다
 from langchain_openai import ChatOpenAI
 
 from 공통 import CHAIN_PATH, CODE_RUNNER, DAY_DIR, OUTPUT_DIR, load_api_key, team_llm_rule
@@ -34,8 +36,14 @@ Q4 = (
 
 async def main():
     # 문제 4. 문서 조회·코드 실행·우리 도구를 한 에이전트에 묶어 체인 코드 만들기
-    #   - 문제 3 의 Context7 설정과 문제 2 의 CODE_RUNNER 로 도구 목록 둘을 받으세요.
-    #   - 그 둘과 위에서 불러 온 `team_llm_rule` 을 한 리스트로 합쳐 create_agent 에 넘기세요.
+    #   - 문제 3 의 Context7 설정과 문제 2 의 CODE_RUNNER 를 한 클라이언트에 함께 등록하세요.
+    #     (MultiServerMCPClient({"docs": context7, "code": CODE_RUNNER}))
+    #   - 서버가 둘이라 async with 를 두 겹 겹쳐야 합니다. 대신 `async with AsyncExitStack() as stack:`
+    #     한 블록을 열고, 서버마다
+    #         session = await stack.enter_async_context(client.session(서버이름))
+    #     로 세션을 쌓은 뒤 `await load_mcp_tools(session)` 으로 도구를 모으세요.
+    #     블록이 끝나면 연 순서의 역순으로 두 서버가 알아서 닫힙니다.
+    #   - 모은 도구와 위에서 불러 온 `team_llm_rule` 을 한 리스트로 합쳐 create_agent 에 넘기세요.
     #     모델은 ChatOpenAI(model="gpt-4o-mini", temperature=0, timeout=60) 입니다.
     #   - 시스템 프롬프트에는 이 셋을 넣으세요.
     #       1) LangChain API 는 기억에 의존하지 말고 Context7 도구로 최신 문서를 확인한 뒤 쓴다
@@ -45,6 +53,7 @@ async def main():
     #          ```python 코드블록으로 넣는다(이 서버는 print 로 찍은 것만 돌려줍니다)
     #   - middleware=[ModelCallLimitMiddleware(run_limit=15, exit_behavior="end")] 를 함께 넘기세요.
     #   - 위 `Q4` 를 물어 결과를 변수 `result` 에 담고, print_trajectory(result) 로 기록을 찍으세요.
+    #     (여기까지가 블록 안입니다. 아래 저장은 블록 밖에서 해도 됩니다.)
     #   - 최종 답변 텍스트에서 extract_code(...) 로 코드만 꺼내 변수 `chain_code` 에 담고,
     #     OUTPUT_DIR.mkdir(parents=True, exist_ok=True) 로 저장할 폴더를 먼저 만든 뒤
     #     CHAIN_PATH 에 저장하세요(파일 쓰기는 CHAIN_PATH.write_text(chain_code, encoding="utf-8") 입니다).
