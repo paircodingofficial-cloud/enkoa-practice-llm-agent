@@ -1,0 +1,22 @@
+# 배포용 의존성 목록.
+#   Streamlit Community Cloud 는 진입점(main.py) 이 있는 이 폴더에서 의존성 파일을 먼저 찾는다.
+#   uv.lock 이 1순위라 두 파일을 짝으로 올려야 한다(교안 05_배포.md 참고).
+#   라이브러리를 더할 때는 이 폴더에서  uv add <이름>  을 쓴다. 두 파일이 함께 갱신된다.
+[project]
+name = "streamlit-multipage-demo"
+version = "0.1.0"
+description = "23일차 멀티페이지 데모 (대시보드 + 챗봇 + 문서 Q&A)"
+requires-python = ">=3.12"
+dependencies = [
+    # 화면과 데이터
+    "streamlit>=1.59",
+    "pandas>=2.0",
+    "plotly>=6.0",          # 대시보드 막대·선 차트
+    "seaborn>=0.13",        # 분포·산점도
+    "matplotlib>=3.8",      # seaborn 이 그리는 그림 객체 + 한글 폰트 설정
+    # 챗봇·검색 (core/ 를 통해 실행에 필요하다. 직접 import 하지 않아도 빠지면 안 된다)
+    "langchain-core>=1.0",  # 프롬프트·출력 파서
+    "langchain-openai>=1.0",  # ChatOpenAI · OpenAIEmbeddings
+    "langchain-chroma>=1.0",  # 벡터 저장소
+    "chromadb>=1.0",        # langchain-chroma 가 쓰는 벡터 DB 엔진
+]
