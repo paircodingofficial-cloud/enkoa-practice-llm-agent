@@ -142,7 +142,7 @@ def load_key():
 st.caption(
     "읽는 곳이 두 군데인 이유: `st.secrets` 는 **앱을 실행한 폴더** 기준으로 secrets 파일을 찾습니다. "
     "이 자료는 단원 폴더에서도, 실습자료 루트에서도 실행하므로 "
-    "`_from_unit_folder()` 가 단원 폴더의 파일을 절대경로로 한 번 더 확인합니다."
+    "`_from_unit_folder()` 가 이 파일 위쪽 폴더를 훑어 가장 가까운 `.streamlit/secrets.toml` 을 찾습니다."
 )
 st.warning(
     "함정: secrets 파일이 **아예 없으면** `st.secrets` 는 조회하는 순간 예외를 냅니다. "

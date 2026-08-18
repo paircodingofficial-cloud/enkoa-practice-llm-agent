@@ -43,7 +43,7 @@ uv add streamlit plotly langchain langchain-openai langchain-community langchain
 # (pandas·matplotlib·seaborn 은 이전 단원에서 설치)
 ```
 
-배포용 의존성 목록은 `교안_02_챗봇과_연동/04_멀티페이지_데모/pyproject.toml` 과 `uv.lock` 입니다.
+배포는 `교안_02_챗봇과_연동/04_멀티페이지_데모/` 폴더를 통째로 올리면 됩니다. 그 안에 `core/`·`data/`·`pyproject.toml`·`uv.lock` 이 함께 들어 있습니다.
 
 ## API 키 (필수)
 
