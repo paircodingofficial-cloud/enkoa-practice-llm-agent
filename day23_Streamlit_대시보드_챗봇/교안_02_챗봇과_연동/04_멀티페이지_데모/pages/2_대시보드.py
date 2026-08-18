@@ -31,6 +31,7 @@ st.title("📊 펭귄 데이터 대시보드")
 
 @st.cache_data
 def load_penguins():
+    """펭귄 데이터를 읽어 돌려준다(한 번만 읽고 캐싱)."""
     return pd.read_csv(DATA_DIR / "penguins.csv")
 
 

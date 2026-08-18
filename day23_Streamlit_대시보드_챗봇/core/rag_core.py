@@ -70,6 +70,7 @@ def _retriever():
 
 
 def _generate_answer(question: str, sources: list[dict]) -> str:
+    """근거 문서만 참고해 답변 문장을 만들어 돌려줍니다."""
     from langchain_core.output_parsers import StrOutputParser
     from langchain_core.prompts import ChatPromptTemplate
     from langchain_openai import ChatOpenAI
@@ -87,6 +88,19 @@ def _generate_answer(question: str, sources: list[dict]) -> str:
     )
     chain = prompt | ChatOpenAI(model="gpt-4o-mini", temperature=0) | StrOutputParser()
     return chain.invoke({"context": context, "question": question})
+
+
+def prepare():
+    """FAQ 검색 인덱스(벡터 저장소)를 만들어 돌려줍니다.
+
+    임베딩 API 를 부르고 벡터 저장소를 만드는 **무거운 준비**입니다.
+    앱을 켤 때 미리 한 번 불러 두면 첫 질문이 느려지는 것을 막을 수 있습니다.
+
+    Raises:
+        RuntimeError: OPENAI_API_KEY 가 없을 때.
+    """
+    _require_key()
+    return _retriever()
 
 
 # 공개 API

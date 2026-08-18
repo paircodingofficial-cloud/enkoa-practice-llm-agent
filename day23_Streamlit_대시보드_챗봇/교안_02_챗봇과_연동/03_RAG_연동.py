@@ -12,6 +12,7 @@ import os
 os.environ.setdefault("ARROW_DEFAULT_MEMORY_POOL", "system")
 
 import sys
+import time
 from pathlib import Path
 
 import streamlit as st
@@ -164,32 +165,50 @@ st.divider()
 # =============================================================================
 st.header("4. 무거운 준비는 st.cache_resource 로 한 번만")
 st.markdown(
-    "검색 인덱스·모델처럼 무거운 자원은 재실행마다 다시 만들면 느립니다. `@st.cache_resource` 로 "
-    "**한 번만** 만들어 공유하세요. (교안 01-05 복습)"
+    """
+검색 인덱스는 **문서를 전부 임베딩해서 벡터 저장소에 넣는** 무거운 준비입니다. 재실행마다 다시 만들면
+질문할 때마다 몇 초씩 기다려야 합니다. `@st.cache_resource` 를 붙이면 **앱이 도는 동안 한 번만** 만들고
+이후에는 만들어 둔 것을 그대로 씁니다.
+
+`rag_core.prepare()` 가 그 인덱스를 만들어 돌려줍니다.
+"""
 )
 st.code(
-    '''@st.cache_resource
-def get_rag():
-    # 실제로는 인덱스를 만들어 반환. 여기서는 모듈을 그대로 공유.
-    return rag_core
+    '''@st.cache_resource(show_spinner="검색 인덱스를 준비하는 중…")
+def get_index():
+    """FAQ 검색 인덱스를 만들어 돌려준다. 앱이 도는 동안 한 번만 실행된다."""
+    started = time.perf_counter()
+    store = rag_core.prepare()                       # 임베딩 + 벡터 저장소 생성
+    return {"store": store, "걸린시간": round(time.perf_counter() - started, 2)}
 
-rag = get_rag()   # 처음 한 번만 준비, 이후 재사용
-st.write("RAG 준비 완료:", rag is rag_core)''',
+
+index = get_index()
+st.write(f"인덱스 준비에 {index['걸린시간']}초 걸렸습니다.")''',
     language="python",
 )
 st.caption("▼ 실제 실행 결과")
 
 
-@st.cache_resource
-def get_rag():
-    return rag_core
+@st.cache_resource(show_spinner="검색 인덱스를 준비하는 중…")
+def get_index():
+    """FAQ 검색 인덱스를 만들어 돌려준다. 앱이 도는 동안 한 번만 실행된다."""
+    started = time.perf_counter()
+    store = rag_core.prepare()
+    return {"store": store, "걸린시간": round(time.perf_counter() - started, 2)}
 
 
-rag = get_rag()
-st.write("RAG 준비 완료:", rag is rag_core)
+index = get_index()
+st.write(f"인덱스 준비에 {index['걸린시간']}초 걸렸습니다.")
+st.caption(f"지금 시각: {time.strftime('%H:%M:%S')}")
 
-# 🖐️ 직접 해보기: get_rag 에 st.write("준비 중...") 한 줄을 넣고 화면을 여러 번 새로고침해 보세요.
-#               그 문구가 몇 번 나오는지 세어 보면 캐시가 도는 것을 눈으로 확인할 수 있습니다(확인 후 되돌리기).
+st.info(
+    "**캐시가 도는 것을 확인하는 법**: 화면을 여러 번 다시 실행해 보세요. "
+    "아래 '지금 시각'은 계속 바뀌는데 위 '걸린시간'은 처음 값 그대로입니다. "
+    "함수 몸통이 다시 돌지 않았다는 뜻입니다. 다시 돌았다면 그 숫자도 매번 달라집니다."
+)
+
+# 🖐️ 직접 해보기: get_index 의 @st.cache_resource 줄을 잠시 주석 처리하고 새로고침해 보세요.
+#               매번 인덱스를 새로 만드느라 화면이 느려지고 '걸린시간'도 계속 바뀝니다(확인 후 되돌리기).
 
 st.divider()
 st.subheader("이번 강의 정리")

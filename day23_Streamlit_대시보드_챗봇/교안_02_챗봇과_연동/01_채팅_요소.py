@@ -76,6 +76,7 @@ st.markdown(
 
 st.code(
     '''def stream_words():
+    """문장을 단어 단위로 조금씩 흘려보낸다(스트리밍 흉내)."""
     for word in "안녕하세요 스트리밍 출력 예시입니다".split():
         yield word + " "
         time.sleep(0.1)
@@ -88,6 +89,7 @@ st.caption("▼ 실제 실행 결과: 버튼을 누르면 단어가 하나씩 �
 
 
 def stream_words():
+    """문장을 단어 단위로 조금씩 흘려보낸다(스트리밍 흉내)."""
     for word in "안녕하세요 스트리밍 출력 예시입니다".split():
         yield word + " "
         time.sleep(0.1)

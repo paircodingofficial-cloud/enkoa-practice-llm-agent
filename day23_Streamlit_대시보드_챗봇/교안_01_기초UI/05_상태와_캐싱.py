@@ -90,6 +90,7 @@ CSV 읽기·API 호출·무거운 집계에 씁니다. 아래는 3초 걸리는 
 st.code(
     '''@st.cache_data
 def load_slow():
+    """3초 걸리는 무거운 작업을 흉내 내어 DataFrame 을 돌려준다."""
     time.sleep(3)          # 느린 작업 흉내
     return pd.DataFrame({"값": [1, 2, 3]})
 
@@ -102,6 +103,7 @@ st.caption("▼ 실제 실행 결과: 처음만 느리고, 재실행 때는 즉�
 
 @st.cache_data
 def load_slow():
+    """3초 걸리는 무거운 작업을 흉내 내어 DataFrame 을 돌려준다."""
     time.sleep(3)
     return pd.DataFrame({"값": [1, 2, 3]})
 
@@ -131,6 +133,7 @@ st.markdown(
 st.code(
     '''@st.cache_resource
 def get_model():
+    """무거운 모델·연결을 흉내 낸 자원을 돌려준다(한 번만 만들어 공유)."""
     # 무거운 모델/연결을 한 번만 만들어 공유
     return {"name": "demo-model", "loaded": True}
 
@@ -143,6 +146,7 @@ st.caption("▼ 실제 실행 결과")
 
 @st.cache_resource
 def get_model():
+    """무거운 모델·연결을 흉내 낸 자원을 돌려준다(한 번만 만들어 공유)."""
     return {"name": "demo-model", "loaded": True}
 
 

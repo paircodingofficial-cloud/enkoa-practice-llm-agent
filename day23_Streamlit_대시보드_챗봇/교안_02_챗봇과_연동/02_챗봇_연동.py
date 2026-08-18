@@ -81,17 +81,34 @@ st.markdown(
 """
 )
 
+st.markdown(
+    """
+**체인은 한 번만 만듭니다.** `chatbot_core.build_chain()` 은 프롬프트·모델·파서를 이어 붙인 체인을
+만듭니다. 메시지마다 새로 만들 필요가 없는 준비물이라, `@st.cache_resource` 로 한 번 만들어 두고
+`stream_reply` 에 넘깁니다(안 넘기면 호출할 때마다 새로 만듭니다).
+"""
+)
+
 st.code(
-    '''# 1. 대화 이력 준비
+    '''# 1. 체인 준비: 앱이 도는 동안 한 번만 만든다
+@st.cache_resource
+def get_chain():
+    """LangChain 체인을 만들어 돌려준다. 앱이 도는 동안 한 번만 실행된다."""
+    return chatbot_core.build_chain()
+
+
+chain = get_chain()
+
+# 2. 대화 이력 준비
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
-# 2. 저장된 이력을 모두 다시 그리기
+# 3. 저장된 이력을 모두 다시 그리기
 for msg in st.session_state.messages:
     with st.chat_message(msg["role"]):
         st.write(msg["content"])
 
-# 3. 새 입력 → 기존 챗봇 연동
+# 4. 새 입력 → 기존 챗봇 연동
 if prompt := st.chat_input("무엇이든 물어보세요"):
     st.session_state.messages.append({"role": "user", "content": prompt})
     with st.chat_message("user"):
@@ -101,12 +118,22 @@ if prompt := st.chat_input("무엇이든 물어보세요"):
         # 기존 시스템의 스트리밍 함수를 그대로 st.write_stream 에 연결.
         # 이력에서 방금 넣은 내 메시지는 뺀다. 그 문장은 첫 번째 인자로 이미 전달된다.
         answer = st.write_stream(
-            chatbot_core.stream_reply(prompt, st.session_state.messages[:-1])
+            chatbot_core.stream_reply(prompt, st.session_state.messages[:-1], chain=chain)
         )
     st.session_state.messages.append({"role": "assistant", "content": answer})''',
     language="python",
 )
+
 st.caption("▼ 실제 실행 결과: 아래 입력창에 말을 걸어 보세요")
+
+
+@st.cache_resource
+def get_chain():
+    """LangChain 체인을 만들어 돌려준다. 앱이 도는 동안 한 번만 실행된다."""
+    return chatbot_core.build_chain()
+
+
+chain = get_chain()
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
@@ -120,7 +147,7 @@ if prompt := st.chat_input("무엇이든 물어보세요"):
     with st.chat_message("assistant"):
         # 이력에서 방금 넣은 내 메시지는 뺀다. 그 문장은 첫 번째 인자로 이미 전달된다.
         answer = st.write_stream(
-            chatbot_core.stream_reply(prompt, st.session_state.messages[:-1])
+            chatbot_core.stream_reply(prompt, st.session_state.messages[:-1], chain=chain)
         )
     st.session_state.messages.append({"role": "assistant", "content": answer})
 

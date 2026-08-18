@@ -146,10 +146,12 @@ st.code(
     st.session_state.log = []
 
 def add_log():
+    """입력창의 현재 값을 기록 목록에 덧붙인다(버튼 콜백)."""
     # 콜백은 위젯 반환값을 못 본다. key 로 session_state 에서 값을 읽는다.
     st.session_state.log.append(st.session_state.memo)
 
 def clear_log():
+    """기록 목록을 비운다(버튼 콜백)."""
     st.session_state.log = []
 
 st.text_input("메모", key="memo")
@@ -165,11 +167,13 @@ if "log" not in st.session_state:
 
 
 def add_log():
+    """입력창의 현재 값을 기록 목록에 덧붙인다(버튼 콜백)."""
     # key="memo" 로 준 위젯의 현재 값이 st.session_state.memo 에 들어 있다
     st.session_state.log.append(st.session_state.memo)
 
 
 def clear_log():
+    """기록 목록을 비운다(버튼 콜백)."""
     st.session_state.log = []
 
 
@@ -202,6 +206,7 @@ st.code(
     st.session_state.applied = None
 
 def save_form():
+    """폼에 입력된 값들을 한꺼번에 읽어 저장한다(제출 콜백)."""
     # 폼 위젯도 key 로 값을 읽는다(제출 시점의 값이 들어 있다)
     st.session_state.applied = {
         "이름": st.session_state.f_name,
@@ -225,6 +230,7 @@ if "applied" not in st.session_state:
 
 
 def save_form():
+    """폼에 입력된 값들을 한꺼번에 읽어 저장한다(제출 콜백)."""
     # 제출 버튼의 콜백. 폼 안 위젯 값들을 key 로 한꺼번에 읽는다.
     st.session_state.applied = {
         "이름": st.session_state.f_name,

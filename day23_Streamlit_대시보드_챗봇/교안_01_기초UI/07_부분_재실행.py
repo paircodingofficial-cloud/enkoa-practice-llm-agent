@@ -69,6 +69,7 @@ st.session_state.full_runs += 1
 
 @st.fragment
 def sort_panel():
+    """정렬 선택과 실행 횟수를 보여 주는 조각. 이 안의 위젯은 이 함수만 다시 실행한다."""
     # 조각 안: 조각만 다시 돌 때도 증가
     st.session_state.frag_runs += 1
     order = st.radio("정렬", ["오름차순", "내림차순"], horizontal=True, key="order")
@@ -87,6 +88,7 @@ st.caption("▼ 실제 실행 결과 (아래 라디오를 바꿔 보세요. 조�
 
 @st.fragment
 def sort_panel():
+    """정렬 선택과 실행 횟수를 보여 주는 조각. 이 안의 위젯은 이 함수만 다시 실행한다."""
     # 이 함수 안에서 위젯을 조작하면 이 함수만 다시 실행된다(스크립트 전체는 그대로)
     st.session_state.frag_runs += 1
     order = st.radio("정렬", ["오름차순", "내림차순"], horizontal=True, key="order")
@@ -127,6 +129,7 @@ st.markdown(
 
 @st.cache_data
 def load_penguins():
+    """펭귄 데이터를 읽어 돌려준다(한 번만 읽고 캐싱)."""
     # 캐싱은 '같은 인자면 다시 계산 안 함'이고, fragment 는 '아예 그 코드에 안 들어감'이다.
     # 둘은 겹치지 않으므로 함께 쓴다.
     return pd.read_csv(DATA / "penguins.csv").dropna(subset=["body_mass_g"])
@@ -145,6 +148,7 @@ st.dataframe(summary, width="stretch")
 
 @st.fragment
 def species_filter():
+    """종을 고르고 그 결과만 다시 그리는 조각. 위의 무거운 집계는 다시 돌지 않는다."""
     # 이 안의 위젯을 조작하면 위의 sleep(1초)을 건너뛰고 이 블록만 다시 그린다
     picked = st.multiselect(
         "볼 종 고르기", sorted(df["species"].unique()), default=sorted(df["species"].unique())
@@ -176,6 +180,7 @@ st.markdown(
 st.code(
     '''@st.fragment
 def reset_panel():
+    """조각 안에서 전체 재실행(st.rerun)을 부르는 예. 화면 전체가 다시 그려진다."""
     if st.button("카운터 초기화하고 전체 새로 그리기"):
         st.session_state.full_runs = 0
         st.session_state.frag_runs = 0
@@ -189,6 +194,7 @@ st.caption("▼ 실제 실행 결과")
 
 @st.fragment
 def reset_panel():
+    """조각 안에서 전체 재실행(st.rerun)을 부르는 예. 화면 전체가 다시 그려진다."""
     if st.button("카운터 초기화하고 전체 새로 그리기"):
         st.session_state.full_runs = 0
         st.session_state.frag_runs = 0
